@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  NMBaseNavigationController.h
 //  NewMinister
 //
 //  Created by 范声乐 on 2018/9/27.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface NMBaseNavigationController : UINavigationController
 
 @end
-

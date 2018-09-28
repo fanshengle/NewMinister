@@ -1,18 +1,18 @@
 //
-//  AppDelegate.m
+//  NMAppDelegate.m
 //  NewMinister
 //
 //  Created by 范声乐 on 2018/9/27.
 //  Copyright © 2018年 范声乐. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "NMAppDelegate.h"
 
-@interface AppDelegate ()
+@interface NMAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation NMAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -46,6 +46,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
