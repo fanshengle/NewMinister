@@ -10,4 +10,10 @@
 
 @implementation NMAppDelegate (AppService)
 
+
++ (NMAppDelegate *)shareAppDelegate{
+    
+    return (NMAppDelegate *)[[UIApplication sharedApplication] delegate];
+}
+
 @end

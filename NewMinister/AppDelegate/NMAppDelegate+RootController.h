@@ -12,4 +12,6 @@
 
 @interface NMAppDelegate (RootController)
 
+- (void)setUpRootViewController;
+
 @end

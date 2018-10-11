@@ -12,4 +12,58 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#ifdef __OBJC__
+
+/** 所有第三方库的头文件*/
+#import <AFNetworking.h>
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <SDCycleScrollView.h>
+#import <YYKit.h>
+
+/** 所有宏定义的头文件（全局宏） */
+#import "Common.h"                  //配置信息
+#import "RequestURL.h"              //所有请求url
+#import "FontSize.h"                //字体大小
+#import "FontColorHex.h"            //字体颜色
+#import "LayoutAapter.h"            //布局适配
+#import "KeyManage.h"               //管理跟着key值
+
+
+/** 所有工具类的头文件 */
+#import "ToolObject.h"
+#import "UIColor+colorChange.h"
+#import "UIView+Extension.h"
+
+/** 所有封装的重用类的头文件 */
+#import "SPPageMenu.h"
+#import "NMTopOperationBarView.h"
+#import "NMWaterFlowCollectionViewLayout.h"
+
+/** 所有自定义类的头文件(基础类) */
+#import "NMAppDelegate.h"
+#import "NMAppDelegate+AppService.h"
+#import "NMAppDelegate+AppLifeCircle.h"
+#import "NMAppDelegate+RootController.h"
+#import "NMBaseViewController.h"
+#import "NMBaseNavigationController.h"
+#import "NMBaseModel.h"
+
+#endif
+
+
+
+#ifdef DEBUG
+
+#define NMString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+
+#define NMLog(...) printf("%s: %s 第%d行: %s\n\n",[[ToolObject getCurrentTime] UTF8String], [NMString UTF8String] ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+
+#else
+#define NMLog(...)
+
+#endif
+
 #endif /* PrefixHeader_pch */
