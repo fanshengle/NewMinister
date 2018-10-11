@@ -19,7 +19,6 @@
     // Override point for customization after application launch.
     //做了第二次改变
     //设置跟视图控制器
-    //做了一些改变
     [self setUpRootViewController];
     
     return YES;
