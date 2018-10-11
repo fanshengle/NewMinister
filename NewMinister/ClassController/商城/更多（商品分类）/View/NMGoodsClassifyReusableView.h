@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NMGoodsClassifyReusableView : UICollectionReusableView
+ 
+@property (nonatomic, strong) UILabel *headTitleLab;
 
 @end

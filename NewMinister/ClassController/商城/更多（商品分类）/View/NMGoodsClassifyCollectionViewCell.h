@@ -10,4 +10,7 @@
 
 @interface NMGoodsClassifyCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImageView *secondClassifyImgView;
+@property (nonatomic, strong) UILabel *secondClassifyName;
+
 @end

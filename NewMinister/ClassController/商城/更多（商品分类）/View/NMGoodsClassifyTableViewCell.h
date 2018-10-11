@@ -10,4 +10,6 @@
 
 @interface NMGoodsClassifyTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *firstCateName;           //一级分类名称
+
 @end

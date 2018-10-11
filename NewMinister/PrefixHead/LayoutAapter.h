@@ -34,8 +34,12 @@
 #define NMTabbarHeight           ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)              //底部Tabbar高度
 #define NMTopBarHeight           (NMStatusBarHeight + NMNavBarHeight)                                                   //导航栏和标签栏的总高度
 
+
+#define NM2  2.
+#define NM3  3.
+#define NM4  4.
 #define NM5  5.
-#define NM8 8.
+#define NM8  8.
 #define NM10 10.
 #define NM15 15.
 #define NM20 20.
@@ -45,8 +49,10 @@
 #define NM40 40.
 
 #define NM44 44.
+#define NM47 47.
 #define NM55 55.
 #define NM60 60.
+#define NM70 70.
 #define NM88 88.
 
 

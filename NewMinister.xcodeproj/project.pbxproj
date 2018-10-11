@@ -127,7 +127,11 @@
 		B9A6A3DC216DC661007563B5 /* sixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A6A3D2216DC661007563B5 /* sixin@3x.png */; };
 		B9A6A3DD216DC661007563B5 /* tongzhi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A6A3D3216DC661007563B5 /* tongzhi@3x.png */; };
 		B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A6A3E0216DC68A007563B5 /* NMMessageModel.m */; };
+		B9C65436216EEE4C00875509 /* NMGoodsClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9C65435216EEE4C00875509 /* NMGoodsClassifyViewController.m */; };
 		B9D64791215E262700CF6122 /* NMTabBarItemAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D64790215E262700CF6122 /* NMTabBarItemAnimationManager.m */; };
+		B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E83621216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m */; };
+		B9E83625216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E83624216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m */; };
+		B9E83628216F14F9003D2020 /* NMGoodsClassifyReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E83627216F14F9003D2020 /* NMGoodsClassifyReusableView.m */; };
 		B9EF85D8216C4EB70000AF10 /* NMPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF85D7216C4EB70000AF10 /* NMPublishButton.m */; };
 		B9EFB98221631191004881D9 /* NMMallRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFB98121631191004881D9 /* NMMallRecommendViewController.m */; };
 		B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFB984216311A6004881D9 /* NMMallOtherViewController.m */; };
@@ -331,8 +335,16 @@
 		B9A6A3D3216DC661007563B5 /* tongzhi@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tongzhi@3x.png"; sourceTree = "<group>"; };
 		B9A6A3DF216DC68A007563B5 /* NMMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMessageModel.h; sourceTree = "<group>"; };
 		B9A6A3E0216DC68A007563B5 /* NMMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMessageModel.m; sourceTree = "<group>"; };
+		B9C65434216EEE4C00875509 /* NMGoodsClassifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMGoodsClassifyViewController.h; sourceTree = "<group>"; };
+		B9C65435216EEE4C00875509 /* NMGoodsClassifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMGoodsClassifyViewController.m; sourceTree = "<group>"; };
 		B9D6478F215E262700CF6122 /* NMTabBarItemAnimationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMTabBarItemAnimationManager.h; sourceTree = "<group>"; };
 		B9D64790215E262700CF6122 /* NMTabBarItemAnimationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMTabBarItemAnimationManager.m; sourceTree = "<group>"; };
+		B9E83620216F14A6003D2020 /* NMGoodsClassifyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMGoodsClassifyTableViewCell.h; sourceTree = "<group>"; };
+		B9E83621216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMGoodsClassifyTableViewCell.m; sourceTree = "<group>"; };
+		B9E83623216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMGoodsClassifyCollectionViewCell.h; sourceTree = "<group>"; };
+		B9E83624216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMGoodsClassifyCollectionViewCell.m; sourceTree = "<group>"; };
+		B9E83626216F14F9003D2020 /* NMGoodsClassifyReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMGoodsClassifyReusableView.h; sourceTree = "<group>"; };
+		B9E83627216F14F9003D2020 /* NMGoodsClassifyReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMGoodsClassifyReusableView.m; sourceTree = "<group>"; };
 		B9EF85D6216C4EB70000AF10 /* NMPublishButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPublishButton.h; sourceTree = "<group>"; };
 		B9EF85D7216C4EB70000AF10 /* NMPublishButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPublishButton.m; sourceTree = "<group>"; };
 		B9EFB98021631191004881D9 /* NMMallRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMallRecommendViewController.h; sourceTree = "<group>"; };
@@ -501,8 +513,8 @@
 			isa = PBXGroup;
 			children = (
 				B9142DE6215CD26C00762C63 /* Tools */,
-				B9142DE2215CD0F200762C63 /* Config */,
-				B9142DE5215CD21B00762C63 /* Request */,
+				B9C65431216EEAFF00875509 /* Config */,
+				B9C65432216EED6300875509 /* Request */,
 				B9142DCC215CCD3A00762C63 /* AppDelegate */,
 				B9142DE3215CD10000762C63 /* ClassController */,
 				B94A9B3C215E03DE00A9C689 /* Resource */,
@@ -570,13 +582,6 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-		B9142DE2215CD0F200762C63 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		B9142DE3215CD10000762C63 /* ClassController */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,13 +610,6 @@
 				B9A5994E2165A633007B46BA /* NMBaseModel.m */,
 			);
 			path = "Base（所有基类）";
-			sourceTree = "<group>";
-		};
-		B9142DE5215CD21B00762C63 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		B9142DE6215CD26C00762C63 /* Tools */ = {
@@ -644,6 +642,7 @@
 				B9142DF6215CD4FA00762C63 /* Mall（商城） */,
 				B957B168216340DE009C60E6 /* 一级搜索页 */,
 				B9096C6B21646F3000EFC0F9 /* 二级搜索页 */,
+				B9C65433216EEDEB00875509 /* 更多（商品分类） */,
 			);
 			path = "商城";
 			sourceTree = "<group>";
@@ -1199,6 +1198,59 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		B9C65431216EEAFF00875509 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B9C65432216EED6300875509 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		B9C65433216EEDEB00875509 /* 更多（商品分类） */ = {
+			isa = PBXGroup;
+			children = (
+				B9E8361D216F144A003D2020 /* Controller */,
+				B9E8361C216F1442003D2020 /* View */,
+				B9E8361B216F143B003D2020 /* Model */,
+			);
+			path = "更多（商品分类）";
+			sourceTree = "<group>";
+		};
+		B9E8361B216F143B003D2020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9E8361C216F1442003D2020 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9E83620216F14A6003D2020 /* NMGoodsClassifyTableViewCell.h */,
+				B9E83621216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m */,
+				B9E83623216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.h */,
+				B9E83624216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m */,
+				B9E83626216F14F9003D2020 /* NMGoodsClassifyReusableView.h */,
+				B9E83627216F14F9003D2020 /* NMGoodsClassifyReusableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9E8361D216F144A003D2020 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9C65434216EEE4C00875509 /* NMGoodsClassifyViewController.h */,
+				B9C65435216EEE4C00875509 /* NMGoodsClassifyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1479,6 +1531,7 @@
 				B957B16B2163412C009C60E6 /* NMFirstSearchViewController.m in Sources */,
 				B95F63FE216B2C0000650551 /* UIView+Extension.m in Sources */,
 				B9142E2D215CDB8400762C63 /* NMBaseDataManageAction.m in Sources */,
+				B9E83628216F14F9003D2020 /* NMGoodsClassifyReusableView.m in Sources */,
 				B9A5997C216600AC007B46BA /* NMMineOrderListView.m in Sources */,
 				B94A9B33215DD91E00A9C689 /* NMPublishViewController.m in Sources */,
 				B94A9B2F215DD8EC00A9C689 /* NMMallViewController.m in Sources */,
@@ -1499,6 +1552,8 @@
 				B9096C5C2164601400EFC0F9 /* SearchReusableView.m in Sources */,
 				B9A599562165B313007B46BA /* NMMineTableViewCell.m in Sources */,
 				B9142DEC215CD2E200762C63 /* NMBaseViewController.m in Sources */,
+				B9E83625216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m in Sources */,
+				B9C65436216EEE4C00875509 /* NMGoodsClassifyViewController.m in Sources */,
 				B9096C7E2164A06F00EFC0F9 /* NMWaterFlowCollectionViewLayout.m in Sources */,
 				B9096C642164692B00EFC0F9 /* NMSearchListTableViewCell.m in Sources */,
 				B9A5994C2165A433007B46BA /* NMMineHeaderView.m in Sources */,
@@ -1514,6 +1569,7 @@
 				B9142DD8215CCF5300762C63 /* NMAppDelegate+AppService.m in Sources */,
 				B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */,
 				B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */,
+				B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */,
 				B94A9B36215DD95B00A9C689 /* NMAllianceViewController.m in Sources */,
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,

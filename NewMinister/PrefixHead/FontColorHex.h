@@ -26,6 +26,8 @@
 /**
  配置商城首页的字体颜色
  */
+#define NMf4f8fb [UIColor colorWithHexString:@"f4f8fb"]
+
 #define NMf10315 [UIColor colorWithHexString:@"f10315"]
 #define NM999999 [UIColor colorWithHexString:@"999999"]
 #define NMf1f1f1 [UIColor colorWithHexString:@"f1f1f1"]

@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x4e8c;&#x7ea7;&#x641c;&#x7d22;&#x9875;/Controller/NMSecondSearchViewController.m"
-            timestampString = "560846940.946193"
+            timestampString = "560942453.486093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "118"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x4e8c;&#x7ea7;&#x641c;&#x7d22;&#x9875;/Controller/NMSecondSearchViewController.m"
-            timestampString = "560846940.946275"
+            timestampString = "560942453.486194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -170,12 +170,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/Base&#xff08;&#x6240;&#x6709;&#x57fa;&#x7c7b;&#xff09;/NMBaseViewController.m"
-            timestampString = "560861046.661284"
+            timestampString = "560942453.486369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
             landmarkName = "-setDefaultNavTitle:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/ReuseCode(&#x5c01;&#x88c5;)/&#x9876;&#x90e8;&#x64cd;&#x4f5c;&#x89c6;&#x56fe;/NMTopOperationBarView.m"
+            timestampString = "560942453.486535"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-initTopSearchViewWithFrame:isHaveLeft:rightTitle:rightImgStr:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

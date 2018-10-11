@@ -39,4 +39,12 @@
  */
 - (instancetype)initTopSearchViewHaveLeftBtnWithFrame:(CGRect)frame rightTitle:(NSString *)title rightImgStr:(NSString *)imgStr;
 
+/**
+ 顶部搜索视图风格
+ isHaveLeft:是否有左边按钮
+ rightTitle:最右边按钮lab的title
+ rightImgStr:最右边按钮imgView的图片str
+ */
+- (instancetype)initTopSearchViewWithFrame:(CGRect)frame isHaveLeft:(BOOL)isHave rightTitle:(NSString *)title rightImgStr:(NSString *)imgStr;
+
 @end

@@ -53,7 +53,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = NMf1f1f1;
+    self.view.backgroundColor = NMf4f8fb;
     //默认导航栏样式：黑字
     self.StatusBarStyle = UIStatusBarStyleDefault;
     
