@@ -31,20 +31,20 @@
     
     if (!_tableView) {
         
-        CGFloat tableViewY = self.navBarView.height;
-        CGFloat tableViewWidth = NM70;
-        CGFloat tableViewHeight = NMScreenHeight - NMNavbarHeight;
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, tableViewY, tableViewWidth, tableViewHeight) style:UITableViewStyleGrouped];
-        tableView.backgroundColor = NMWhiteC;
-        tableView.delegate = self;
-        tableView.dataSource = self;
-        tableView.rowHeight = NM47;
-        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        tableView.showsVerticalScrollIndicator = NO;
-        [tableView registerClass:[NMGoodsClassifyTableViewCell class] forCellReuseIdentifier:NSStringFromClass([NMGoodsClassifyTableViewCell class])];
-        [self.view addSubview:tableView];
-        _tableView = tableView;
-        [_tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:_currentSelectIndex] animated:YES scrollPosition:UITableViewScrollPositionTop];
+//        CGFloat tableViewY = self.navBarView.height;
+//        CGFloat tableViewWidth = NM70;
+//        CGFloat tableViewHeight = NMScreenHeight - NMNavbarHeight;
+//        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, tableViewY, tableViewWidth, tableViewHeight) style:UITableViewStyleGrouped];
+//        tableView.backgroundColor = NMWhiteC;
+//        tableView.delegate = self;
+//        tableView.dataSource = self;
+//        tableView.rowHeight = NM47;
+//        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//        tableView.showsVerticalScrollIndicator = NO;
+//        [tableView registerClass:[NMGoodsClassifyTableViewCell class] forCellReuseIdentifier:NSStringFromClass([NMGoodsClassifyTableViewCell class])];
+//        [self.view addSubview:tableView];
+//        _tableView = tableView;
+//        [_tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:_currentSelectIndex] animated:YES scrollPosition:UITableViewScrollPositionTop];
         
     }
     
