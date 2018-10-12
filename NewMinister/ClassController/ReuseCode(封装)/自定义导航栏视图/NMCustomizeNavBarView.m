@@ -10,6 +10,7 @@
 
 //默认按钮的宽度
 static const CGFloat barItemWidth = 40.0;
+static const CGFloat barRightItemWidth = 40.0;
 
 @implementation NMCustomizeNavBarView
 
@@ -22,27 +23,48 @@ static const CGFloat barItemWidth = 40.0;
         self.navTitleColor = NM333333;
         self.leftBtnStr = @"navBar_back";
         
+        self.isHaveLeftItem = YES;
+        self.isHaveRightItem = NO;
         self.backgroundColor = _navBackgroundColor;
     }
     return self;
 }
 
 #pragma mark -- 设置默认带有左边按钮和标题的导航栏
-- (void)setupNavagationDefaultBar{
+- (void)setupNavagationBar{
     
     UIView *navBarView = [[UIView alloc] initWithFrame:CGRectMake(0, NMStatusBarHeight,  NMScreenWidth, NMNavbarHeight - NMStatusBarHeight)];
     [self addSubview:navBarView];
     _navBarView = navBarView;
-    //左边返回按钮
-    UIButton *leftBarItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftBarItem.adjustsImageWhenHighlighted = NO;
-    [leftBarItem setImage:[UIImage imageNamed:self.leftBtnStr] forState:UIControlStateNormal];
-    [_navBarView addSubview:leftBarItem];
-    _leftBarItem = leftBarItem;
-    [leftBarItem mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.bottom.equalTo(self.navBarView);
-        make.width.equalTo(@(barItemWidth));
-    }];
+    
+    if (_isHaveLeftItem) {
+        
+        //左边返回按钮
+        UIButton *leftBarItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        leftBarItem.adjustsImageWhenHighlighted = NO;
+        [leftBarItem setImage:[UIImage imageNamed:self.leftBtnStr] forState:UIControlStateNormal];
+        [_navBarView addSubview:leftBarItem];
+        _leftBarItem = leftBarItem;
+        [leftBarItem mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.bottom.equalTo(self.navBarView);
+            make.width.equalTo(@(barItemWidth));
+        }];
+    }
+    
+    if (_isHaveRightItem) {
+        
+        //右边返回按钮
+        UIButton *rightBarItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        rightBarItem.adjustsImageWhenHighlighted = NO;
+        [rightBarItem setImage:[UIImage imageNamed:self.leftBtnStr] forState:UIControlStateNormal];
+        [_navBarView addSubview:rightBarItem];
+        _rightBarItem = rightBarItem;
+        [rightBarItem mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.top.bottom.equalTo(self.navBarView);
+            make.width.equalTo(@(barRightItemWidth));
+        }];
+    }
+    
     //标题
     UILabel *titleBarLab = [[UILabel alloc] init];
     titleBarLab.textAlignment = NSTextAlignmentCenter;
@@ -52,9 +74,9 @@ static const CGFloat barItemWidth = 40.0;
     [_navBarView addSubview:titleBarLab];
     _titleBarLab = titleBarLab;
     [titleBarLab mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.leftBarItem.mas_right);
+        make.left.equalTo(self.mas_right).offset(barItemWidth);
         make.centerY.equalTo(self.navBarView.mas_centerY);
-        make.right.equalTo(self.mas_right).offset(-barItemWidth);
+        make.right.equalTo(self.mas_right).offset(-barRightItemWidth);
     }];
 }
 

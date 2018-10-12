@@ -16,12 +16,14 @@
  */
 @property (nonatomic, assign) UIStatusBarStyle StatusBarStyle;
 
-@property (nonatomic, strong) NMCustomizeNavBarView *navBarView;
+@property (nonatomic, strong) NMCustomizeNavBarView *navBarView; //自定义的导航栏
 
-#pragma mark -- 设置默认导航栏
+#pragma mark -- 设置默认导航栏(只有返回按钮和标题名称)
 - (void)setDefaultNavTitle:(NSString *)title;
 
 #pragma mark -- 返回上一级页面
 - (void)popBeforeController;
 
+#pragma mark -- 导航栏右边按钮点击
+- (void)rightBarItemClick;
 @end

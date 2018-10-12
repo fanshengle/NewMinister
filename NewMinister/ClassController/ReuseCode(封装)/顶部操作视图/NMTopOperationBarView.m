@@ -74,7 +74,7 @@
         }else if (leftWidth != 0 && rightWidth == 0){//有左按钮，没有右按钮
             
             searchJianJu = leftWidth;
-            searchWidth = viewWidth - leftWidth - searchJianJu;
+            searchWidth = viewWidth - leftWidth - NM15;
         }else if(leftWidth == 0 && rightWidth != 0){//没有左按钮，有右按钮
             
             searchJianJu = NM15;
@@ -100,6 +100,7 @@
 #pragma mark -- 在searchView上布局子视图
 - (void)setupSubviewsOnSearchView{
     
+    CGFloat jianJu = NM10;
     //左边搜索图标
     CGFloat width = 14;
     _leftImgView = [[UIImageView alloc] init];
@@ -108,7 +109,7 @@
     [_searchView addSubview:_leftImgView];
     [_leftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self.searchView);
-        make.left.equalTo(self.searchView.mas_left).offset(self.left);
+        make.left.equalTo(self.searchView.mas_left).offset(jianJu);
         make.width.equalTo(@(width));
     }];
     
@@ -120,13 +121,13 @@
     //[_allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
     [_searchView addSubview:_allDeleteTextBtn];
     [_allDeleteTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.searchView.mas_right).offset(-self.left);
+        make.right.equalTo(self.searchView.mas_right).offset(-jianJu);
         make.top.bottom.equalTo(self.searchView);
         make.width.equalTo(@(width));
     }];
     
     //搜索框
-    CGFloat textFieldLeft = 10.0;
+    CGFloat textFieldLeft = NM10;
     _searchTextField = [[UITextField alloc] init];
     _searchTextField.borderStyle = UITextBorderStyleNone;
     NSString *partStr = @"搜索商品/条码";

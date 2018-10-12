@@ -9,6 +9,8 @@
 #import "NMMallOtherViewController.h"
 #import "NMGoodsWaterFlowCollectionViewCell.h"
 
+#import "NMGoodsDetailsViewController.h"
+
 @interface NMMallOtherViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,NMWaterFlowCollectionViewLayoutDelegate>
 
 @property (nonatomic,strong) SDCycleScrollView *shufflingScrollView;        //轮播滚动视图
@@ -81,6 +83,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
+    NMGoodsDetailsViewController *vc = [[NMGoodsDetailsViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark ————— NMWaterFlowCollectionViewLayout 代理 —————
