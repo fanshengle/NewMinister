@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setDefaultNavTitle:@"我的订单"];
     
 }
 
