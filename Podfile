@@ -11,7 +11,6 @@ target 'NewMinister' do
 
   # Pods for NewMinister
 
-	pod 'AFNetworking'
 	pod 'MJExtension'
 	pod 'MJRefresh'
 	pod 'Masonry'
@@ -19,6 +18,9 @@ target 'NewMinister' do
 	pod 'SDWebImage'
 	pod 'YYKit'
 	pod 'SDCycleScrollView'
+	pod 'AFNetworking'
+
+
 
   target 'NewMinisterTests' do
     inherit! :search_paths
