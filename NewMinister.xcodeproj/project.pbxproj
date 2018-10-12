@@ -81,10 +81,26 @@
 		B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599EFF21702E1100C53F47 /* NMGoodsDetailsViewController.m */; };
 		B9599F0621702F0100C53F47 /* NMConfirmOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */; };
 		B9599F0D2170432900C53F47 /* NMConfirmOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */; };
-		B9599F102170433E00C53F47 /* NMConfirmOrderGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */; };
 		B9599F132170438400C53F47 /* NMConfirmOrderAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */; };
 		B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */; };
 		B9599F19217043CA00C53F47 /* NMConfirmOrderBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */; };
+		B9599F1D21708BA000C53F47 /* NMConfirmOrderGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F1B21708BA000C53F47 /* NMConfirmOrderGoodsCell.m */; };
+		B9599F1E21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9599F1C21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib */; };
+		B9599F222170912400C53F47 /* NMConfirmOrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9599F212170912400C53F47 /* NMConfirmOrderFooterView.xib */; };
+		B9599F30217098FB00C53F47 /* car_chooseSelect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F24217098F800C53F47 /* car_chooseSelect@3x.png */; };
+		B9599F31217098FB00C53F47 /* car_ShopImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F25217098F800C53F47 /* car_ShopImg@2x.png */; };
+		B9599F32217098FB00C53F47 /* car_chooseSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F26217098F800C53F47 /* car_chooseSelect@2x.png */; };
+		B9599F33217098FB00C53F47 /* car_DropDown@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F27217098F900C53F47 /* car_DropDown@3x.png */; };
+		B9599F34217098FB00C53F47 /* car_chooseNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F28217098F900C53F47 /* car_chooseNormal@3x.png */; };
+		B9599F35217098FB00C53F47 /* car_ShopImg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F29217098F900C53F47 /* car_ShopImg@3x.png */; };
+		B9599F36217098FB00C53F47 /* car_chooseNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2A217098F900C53F47 /* car_chooseNormal@2x.png */; };
+		B9599F37217098FB00C53F47 /* car_ArrowGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2B217098FA00C53F47 /* car_ArrowGray@2x.png */; };
+		B9599F38217098FB00C53F47 /* car_ArrowGray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2C217098FA00C53F47 /* car_ArrowGray@3x.png */; };
+		B9599F39217098FB00C53F47 /* car_DropDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2D217098FA00C53F47 /* car_DropDown@2x.png */; };
+		B9599F3A217098FB00C53F47 /* car_ArrowRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2E217098FA00C53F47 /* car_ArrowRed@2x.png */; };
+		B9599F3B217098FB00C53F47 /* car_ArrowRed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2F217098FA00C53F47 /* car_ArrowRed@3x.png */; };
+		B9599F3E21709ADC00C53F47 /* car_Backround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */; };
+		B9599F3F21709ADC00C53F47 /* car_Backround@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */; };
 		B95F63F7216B20C200650551 /* myBackImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F6216B20C200650551 /* myBackImg.png */; };
 		B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F8216B25DD00650551 /* more_arrow@3x.png */; };
 		B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F9216B25DE00650551 /* more_arrow@2x.png */; };
@@ -293,14 +309,30 @@
 		B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderViewController.m; sourceTree = "<group>"; };
 		B9599F0B2170432900C53F47 /* NMConfirmOrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderHeaderView.h; sourceTree = "<group>"; };
 		B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderHeaderView.m; sourceTree = "<group>"; };
-		B9599F0E2170433E00C53F47 /* NMConfirmOrderGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderGoodsCell.h; sourceTree = "<group>"; };
-		B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderGoodsCell.m; sourceTree = "<group>"; };
 		B9599F112170438400C53F47 /* NMConfirmOrderAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderAddressCell.h; sourceTree = "<group>"; };
 		B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderAddressCell.m; sourceTree = "<group>"; };
 		B9599F14217043AD00C53F47 /* NMConfirmOrderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderFooterView.h; sourceTree = "<group>"; };
 		B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderFooterView.m; sourceTree = "<group>"; };
 		B9599F17217043CA00C53F47 /* NMConfirmOrderBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderBottomView.h; sourceTree = "<group>"; };
 		B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderBottomView.m; sourceTree = "<group>"; };
+		B9599F1A21708BA000C53F47 /* NMConfirmOrderGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderGoodsCell.h; sourceTree = "<group>"; };
+		B9599F1B21708BA000C53F47 /* NMConfirmOrderGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderGoodsCell.m; sourceTree = "<group>"; };
+		B9599F1C21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NMConfirmOrderGoodsCell.xib; sourceTree = "<group>"; };
+		B9599F212170912400C53F47 /* NMConfirmOrderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NMConfirmOrderFooterView.xib; sourceTree = "<group>"; };
+		B9599F24217098F800C53F47 /* car_chooseSelect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_chooseSelect@3x.png"; sourceTree = "<group>"; };
+		B9599F25217098F800C53F47 /* car_ShopImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ShopImg@2x.png"; sourceTree = "<group>"; };
+		B9599F26217098F800C53F47 /* car_chooseSelect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_chooseSelect@2x.png"; sourceTree = "<group>"; };
+		B9599F27217098F900C53F47 /* car_DropDown@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_DropDown@3x.png"; sourceTree = "<group>"; };
+		B9599F28217098F900C53F47 /* car_chooseNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_chooseNormal@3x.png"; sourceTree = "<group>"; };
+		B9599F29217098F900C53F47 /* car_ShopImg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ShopImg@3x.png"; sourceTree = "<group>"; };
+		B9599F2A217098F900C53F47 /* car_chooseNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_chooseNormal@2x.png"; sourceTree = "<group>"; };
+		B9599F2B217098FA00C53F47 /* car_ArrowGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ArrowGray@2x.png"; sourceTree = "<group>"; };
+		B9599F2C217098FA00C53F47 /* car_ArrowGray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ArrowGray@3x.png"; sourceTree = "<group>"; };
+		B9599F2D217098FA00C53F47 /* car_DropDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_DropDown@2x.png"; sourceTree = "<group>"; };
+		B9599F2E217098FA00C53F47 /* car_ArrowRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ArrowRed@2x.png"; sourceTree = "<group>"; };
+		B9599F2F217098FA00C53F47 /* car_ArrowRed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ArrowRed@3x.png"; sourceTree = "<group>"; };
+		B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Backround@2x.png"; sourceTree = "<group>"; };
+		B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Backround@3x.png"; sourceTree = "<group>"; };
 		B95F63F6216B20C200650551 /* myBackImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myBackImg.png; sourceTree = "<group>"; };
 		B95F63F8216B25DD00650551 /* more_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@3x.png"; sourceTree = "<group>"; };
 		B95F63F9216B25DE00650551 /* more_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@2x.png"; sourceTree = "<group>"; };
@@ -984,9 +1016,10 @@
 		B94A9B3C215E03DE00A9C689 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B925D6472160B12C0086FA21 /* Mail(商城) */,
+				B9599F23217098CB00C53F47 /* 购物车 */,
 				B9A6A3C9216DC638007563B5 /* 消息 */,
 				B9A599532165A8AD007B46BA /* 我的 */,
-				B925D6472160B12C0086FA21 /* Mail(商城) */,
 				B93434CB215F652E006F01ED /* tabbar */,
 			);
 			path = Resource;
@@ -1129,12 +1162,14 @@
 			children = (
 				B9599F0B2170432900C53F47 /* NMConfirmOrderHeaderView.h */,
 				B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */,
-				B9599F0E2170433E00C53F47 /* NMConfirmOrderGoodsCell.h */,
-				B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */,
+				B9599F1A21708BA000C53F47 /* NMConfirmOrderGoodsCell.h */,
+				B9599F1B21708BA000C53F47 /* NMConfirmOrderGoodsCell.m */,
+				B9599F1C21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib */,
 				B9599F112170438400C53F47 /* NMConfirmOrderAddressCell.h */,
 				B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */,
 				B9599F14217043AD00C53F47 /* NMConfirmOrderFooterView.h */,
 				B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */,
+				B9599F212170912400C53F47 /* NMConfirmOrderFooterView.xib */,
 				B9599F17217043CA00C53F47 /* NMConfirmOrderBottomView.h */,
 				B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */,
 			);
@@ -1148,6 +1183,27 @@
 				B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9599F23217098CB00C53F47 /* 购物车 */ = {
+			isa = PBXGroup;
+			children = (
+				B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */,
+				B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */,
+				B9599F2B217098FA00C53F47 /* car_ArrowGray@2x.png */,
+				B9599F2C217098FA00C53F47 /* car_ArrowGray@3x.png */,
+				B9599F2E217098FA00C53F47 /* car_ArrowRed@2x.png */,
+				B9599F2F217098FA00C53F47 /* car_ArrowRed@3x.png */,
+				B9599F2A217098F900C53F47 /* car_chooseNormal@2x.png */,
+				B9599F28217098F900C53F47 /* car_chooseNormal@3x.png */,
+				B9599F26217098F800C53F47 /* car_chooseSelect@2x.png */,
+				B9599F24217098F800C53F47 /* car_chooseSelect@3x.png */,
+				B9599F2D217098FA00C53F47 /* car_DropDown@2x.png */,
+				B9599F27217098F900C53F47 /* car_DropDown@3x.png */,
+				B9599F25217098F800C53F47 /* car_ShopImg@2x.png */,
+				B9599F29217098F900C53F47 /* car_ShopImg@3x.png */,
+			);
+			path = "购物车";
 			sourceTree = "<group>";
 		};
 		B9A599532165A8AD007B46BA /* 我的 */ = {
@@ -1453,9 +1509,13 @@
 			files = (
 				B9A599662165C24F007B46BA /* myEvaluate@3x.png in Resources */,
 				B9142DA4215CC3F400762C63 /* LaunchScreen.storyboard in Resources */,
+				B9599F31217098FB00C53F47 /* car_ShopImg@2x.png in Resources */,
+				B9599F36217098FB00C53F47 /* car_chooseNormal@2x.png in Resources */,
 				B95F640C216B502F00650551 /* myWaitEvaluate@2x.png in Resources */,
 				B94A9B55215E05A700A9C689 /* tabItem1Normal@3x.png in Resources */,
 				B9096C6F2164891300EFC0F9 /* navBar_back@3x.png in Resources */,
+				B9599F3E21709ADC00C53F47 /* car_Backround@2x.png in Resources */,
+				B9599F32217098FB00C53F47 /* car_chooseSelect@2x.png in Resources */,
 				B9A599712165C2AE007B46BA /* mySetUp@2x.png in Resources */,
 				B95F63F7216B20C200650551 /* myBackImg.png in Resources */,
 				B925D64D2160B1790086FA21 /* mail_SearchIconGray@3x.png in Resources */,
@@ -1472,15 +1532,19 @@
 				B9142DA1215CC3F400762C63 /* Assets.xcassets in Resources */,
 				B9A5996D2165C2A2007B46BA /* myService@2x.png in Resources */,
 				B94A9B56215E05A700A9C689 /* tabItem1Normal@2x.png in Resources */,
+				B9599F3B217098FB00C53F47 /* car_ArrowRed@3x.png in Resources */,
 				B95F6403216B502300650551 /* myWaitSend@3x.png in Resources */,
 				B94A9B57215E05A700A9C689 /* tabItem3Normal@3x.png in Resources */,
 				B9A599722165C2AE007B46BA /* mySetUp@3x.png in Resources */,
 				B9096C61216461A000EFC0F9 /* search_empty@3x.png in Resources */,
+				B9599F33217098FB00C53F47 /* car_DropDown@3x.png in Resources */,
 				B9A599612165C24A007B46BA /* myNews@2x.png in Resources */,
 				B9A6A3DD216DC661007563B5 /* tongzhi@3x.png in Resources */,
 				B94A9B5D215E05A700A9C689 /* tabItem1Select@3x.png in Resources */,
 				B9A6A3D5216DC661007563B5 /* guanzhu@2x.png in Resources */,
+				B9599F37217098FB00C53F47 /* car_ArrowGray@2x.png in Resources */,
 				B9A599622165C24A007B46BA /* myNews@3x.png in Resources */,
+				B9599F35217098FB00C53F47 /* car_ShopImg@3x.png in Resources */,
 				B9A6A3D4216DC661007563B5 /* guanzhu@3x.png in Resources */,
 				B94A9B60215E05A700A9C689 /* tabItem5Select@3x.png in Resources */,
 				B95F640E216B502F00650551 /* myWaitEvaluate@3x.png in Resources */,
@@ -1488,18 +1552,23 @@
 				B925D64F2160B1790086FA21 /* mail_SearchIconGray@2x.png in Resources */,
 				B94A9B52215E05A700A9C689 /* tabItem2Normal@3x.png in Resources */,
 				B9A6A3DB216DC661007563B5 /* sixin@2x.png in Resources */,
+				B9599F1E21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib in Resources */,
 				B95F6412216B504500650551 /* myAfterSales@2x.png in Resources */,
+				B9599F34217098FB00C53F47 /* car_chooseNormal@3x.png in Resources */,
 				B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */,
 				B925D6532160B2090086FA21 /* allDelete@2x.png in Resources */,
+				B9599F222170912400C53F47 /* NMConfirmOrderFooterView.xib in Resources */,
 				B9A6A3DA216DC661007563B5 /* tongzhi@2x.png in Resources */,
 				B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */,
 				B9A5995B2165C229007B46BA /* myNotes@3x.png in Resources */,
 				B9A5996E2165C2A2007B46BA /* myService@3x.png in Resources */,
 				B94A9B5C215E05A700A9C689 /* tabItem3Normal@2x.png in Resources */,
 				B9096C6E2164891300EFC0F9 /* navBar_back@2x.png in Resources */,
+				B9599F38217098FB00C53F47 /* car_ArrowGray@3x.png in Resources */,
 				B9A5995E2165C229007B46BA /* myWallet@3x.png in Resources */,
 				B9A599752165C31F007B46BA /* arrow_Icon@3x.png in Resources */,
 				B94A9B5A215E05A700A9C689 /* tabItem5Select@2x.png in Resources */,
+				B9599F3F21709ADC00C53F47 /* car_Backround@3x.png in Resources */,
 				B925D6522160B2090086FA21 /* allDelete@3x.png in Resources */,
 				B94A9B54215E05A700A9C689 /* tabItem2Select@3x.png in Resources */,
 				B95F640D216B502F00650551 /* myWaitReceive@3x.png in Resources */,
@@ -1508,8 +1577,11 @@
 				B9A5995D2165C229007B46BA /* myWallet@2x.png in Resources */,
 				B9A5998321660C23007B46BA /* myUserLogo_Not@2x.png in Resources */,
 				B94A9B58215E05A700A9C689 /* tabItem4Select@2x.png in Resources */,
+				B9599F3A217098FB00C53F47 /* car_ArrowRed@2x.png in Resources */,
+				B9599F30217098FB00C53F47 /* car_chooseSelect@3x.png in Resources */,
 				B9096C60216461A000EFC0F9 /* search_empty@2x.png in Resources */,
 				B94A9B59215E05A700A9C689 /* tabItem2Select@2x.png in Resources */,
+				B9599F39217098FB00C53F47 /* car_DropDown@2x.png in Resources */,
 				B94A9B64215E062D00A9C689 /* tabItem5Normal@2x.png in Resources */,
 				B94A9B5F215E05A700A9C689 /* tabItem4Select@3x.png in Resources */,
 				B95F6405216B502300650551 /* myWaitPay@3x.png in Resources */,
@@ -1636,6 +1708,7 @@
 				B9A6A3C8216DAB22007563B5 /* NMMessageTableViewCell.m in Sources */,
 				B9142DDB215CCF6200762C63 /* NMAppDelegate+AppLifeCircle.m in Sources */,
 				B910FA10216E16D900FAE864 /* NMHeaderHoverReusableView.m in Sources */,
+				B9599F1D21708BA000C53F47 /* NMConfirmOrderGoodsCell.m in Sources */,
 				B9A5997F216600FF007B46BA /* NMMineUserMsgView.m in Sources */,
 				B9096C76216497F300EFC0F9 /* NMGoodsListViewController.m in Sources */,
 				B94A9B39215DD9A800A9C689 /* NMMineViewController.m in Sources */,
@@ -1674,7 +1747,6 @@
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,
 				B9142DD5215CCE4200762C63 /* NMAppDelegate.m in Sources */,
-				B9599F102170433E00C53F47 /* NMConfirmOrderGoodsCell.m in Sources */,
 				B9096C6921646F1D00EFC0F9 /* NMSecondSearchViewController.m in Sources */,
 				B9A6A3C4216DA7DB007563B5 /* NMMessageViewController.m in Sources */,
 				B9599F0621702F0100C53F47 /* NMConfirmOrderViewController.m in Sources */,

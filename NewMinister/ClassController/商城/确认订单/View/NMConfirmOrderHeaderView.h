@@ -10,4 +10,8 @@
 
 @interface NMConfirmOrderHeaderView : UIView
 
+@property (nonatomic,strong) UIImageView *shopImgView;
+@property (nonatomic,strong) UILabel *shopNameLab;
+
+- (void)refresh;
 @end

@@ -1,5 +1,5 @@
 //
-//  NMConfirmOrderTableViewCell.m
+//  NMConfirmOrderGoodsCell.m
 //  NewMinister
 //
 //  Created by 范声乐 on 2018/10/12.
@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -50,6 +50,7 @@
 
 #define NM44 44.
 #define NM47 47.
+#define NM50 50.
 #define NM55 55.
 #define NM60 60.
 #define NM70 70.

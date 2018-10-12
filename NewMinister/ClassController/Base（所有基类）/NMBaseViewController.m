@@ -68,19 +68,41 @@
     }
 }
 
-#pragma mark -- 设置默认导航栏
-- (void)setDefaultNavTitle:(NSString *)title{
+#pragma mark -- 创建navBarView
+- (NMCustomizeNavBarView *)navBarView{
     
-    NMCustomizeNavBarView *navBarView = [[NMCustomizeNavBarView alloc] initWithFrame:CGRectMake(0, 0, NMScreenWidth, NMNavbarHeight)];
-    navBarView.navTitle = title;
-    //布局默认导航栏子视图
-    [navBarView setupNavagationBar];
-    [self.view addSubview:navBarView];
-    self.navBarView = navBarView;
-    
-    if (self.navBarView.leftBarItem) {
+    if (!_navBarView) {
         
+        NMCustomizeNavBarView *navBarView = [[NMCustomizeNavBarView alloc] initWithFrame:CGRectMake(0, 0, NMScreenWidth, NMNavbarHeight)];
+        [self.view addSubview:navBarView];
+        _navBarView = navBarView;
+    }
+    return _navBarView;
+}
+
+#pragma mark -- 设置导航栏(只有返回按钮和标题名称)
+- (void)setDefaultNavTitle:(NSString *)title{
+
+    self.navBarView.navTitle = title;
+    if (self.navBarView.leftBarItem) {
+
         [self.navBarView.leftBarItem addTarget:self action:@selector(popBeforeController) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+#pragma mark -- 设置导航栏(有返回按钮和标题名称和右边按钮)
+- (void)setNavTitle:(NSString *)title rightBarItem:(NSString *)rightItemStr isPicture:(BOOL)isPicture{
+    
+    [self setDefaultNavTitle:title];
+    
+    if (isPicture) {//右边按钮为图片
+        
+        self.navBarView.rightItemImg = rightItemStr;
+    }else{
+        
+        self.navBarView.rightItemTitle = rightItemStr;
+        self.navBarView.rightItemFont = NMSystemFont(13);
+        self.navBarView.rightItemColor = NM333333;
     }
     
     if (self.navBarView.rightBarItem) {

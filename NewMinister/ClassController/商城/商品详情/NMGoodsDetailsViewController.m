@@ -21,6 +21,8 @@
     // Do any additional setup after loading the view.
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 100, 100);
+    btn.backgroundColor = [UIColor redColor];
     [btn setTitle:@"确认下单" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
