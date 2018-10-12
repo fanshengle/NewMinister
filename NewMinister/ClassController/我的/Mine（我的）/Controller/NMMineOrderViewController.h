@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NMMineOrderViewController : NMBaseViewController
 
+
+@property(nonatomic)NSInteger  titleViewIndex;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@
 		89D43A001FC7B1148FAA3B64 /* libPods-NewMinister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9953528E495B2FF945C571 /* libPods-NewMinister.a */; };
 		A1F4C47821702D8E009D0641 /* NMMineOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */; };
 		A1F4C47C217041C9009D0641 /* NMPersonalMinePageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */; };
+		A1F4C482217067E4009D0641 /* NMContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C481217067E4009D0641 /* NMContentTableView.m */; };
 		B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C562164601200EFC0F9 /* SearchCollectionCell.m */; };
 		B9096C5C2164601400EFC0F9 /* SearchReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C582164601300EFC0F9 /* SearchReusableView.m */; };
 		B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C592164601400EFC0F9 /* SearchCollectionViewLayout.m */; };
@@ -190,6 +191,8 @@
 		A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderViewController.m; sourceTree = "<group>"; };
 		A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPersonalMinePageTitleView.h; sourceTree = "<group>"; };
 		A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPersonalMinePageTitleView.m; sourceTree = "<group>"; };
+		A1F4C480217067E4009D0641 /* NMContentTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMContentTableView.h; sourceTree = "<group>"; };
+		A1F4C481217067E4009D0641 /* NMContentTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMContentTableView.m; sourceTree = "<group>"; };
 		B4F09785A3FE981DC074BA4D /* libPods-NewMinisterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinisterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9096C552164601200EFC0F9 /* SearchCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCollectionCell.h; sourceTree = "<group>"; };
 		B9096C562164601200EFC0F9 /* SearchCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCollectionCell.m; sourceTree = "<group>"; };
@@ -470,6 +473,8 @@
 			children = (
 				A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */,
 				A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */,
+				A1F4C480217067E4009D0641 /* NMContentTableView.h */,
+				A1F4C481217067E4009D0641 /* NMContentTableView.m */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -1724,6 +1729,7 @@
 				B9C65436216EEE4C00875509 /* NMGoodsClassifyViewController.m in Sources */,
 				B9096C7E2164A06F00EFC0F9 /* NMWaterFlowCollectionViewLayout.m in Sources */,
 				B9096C642164692B00EFC0F9 /* NMSearchListTableViewCell.m in Sources */,
+				A1F4C482217067E4009D0641 /* NMContentTableView.m in Sources */,
 				B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */,
 				B9A5994C2165A433007B46BA /* NMMineHeaderView.m in Sources */,
 				B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */,
