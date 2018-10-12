@@ -78,6 +78,13 @@
 		B94A9B64215E062D00A9C689 /* tabItem5Normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B94A9B62215E062C00A9C689 /* tabItem5Normal@2x.png */; };
 		B94A9B65215E062D00A9C689 /* tabItem5Normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B94A9B63215E062C00A9C689 /* tabItem5Normal@3x.png */; };
 		B957B16B2163412C009C60E6 /* NMFirstSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B957B16A2163412C009C60E6 /* NMFirstSearchViewController.m */; };
+		B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599EFF21702E1100C53F47 /* NMGoodsDetailsViewController.m */; };
+		B9599F0621702F0100C53F47 /* NMConfirmOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */; };
+		B9599F0D2170432900C53F47 /* NMConfirmOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */; };
+		B9599F102170433E00C53F47 /* NMConfirmOrderGoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */; };
+		B9599F132170438400C53F47 /* NMConfirmOrderAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */; };
+		B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */; };
+		B9599F19217043CA00C53F47 /* NMConfirmOrderBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */; };
 		B95F63F7216B20C200650551 /* myBackImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F6216B20C200650551 /* myBackImg.png */; };
 		B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F8216B25DD00650551 /* more_arrow@3x.png */; };
 		B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F9216B25DE00650551 /* more_arrow@2x.png */; };
@@ -280,6 +287,20 @@
 		B94A9B6B215E09E400A9C689 /* KeyManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyManage.h; sourceTree = "<group>"; };
 		B957B1692163412C009C60E6 /* NMFirstSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMFirstSearchViewController.h; sourceTree = "<group>"; };
 		B957B16A2163412C009C60E6 /* NMFirstSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMFirstSearchViewController.m; sourceTree = "<group>"; };
+		B9599EFE21702E1100C53F47 /* NMGoodsDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMGoodsDetailsViewController.h; sourceTree = "<group>"; };
+		B9599EFF21702E1100C53F47 /* NMGoodsDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMGoodsDetailsViewController.m; sourceTree = "<group>"; };
+		B9599F0421702F0100C53F47 /* NMConfirmOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderViewController.h; sourceTree = "<group>"; };
+		B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderViewController.m; sourceTree = "<group>"; };
+		B9599F0B2170432900C53F47 /* NMConfirmOrderHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderHeaderView.h; sourceTree = "<group>"; };
+		B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderHeaderView.m; sourceTree = "<group>"; };
+		B9599F0E2170433E00C53F47 /* NMConfirmOrderGoodsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderGoodsCell.h; sourceTree = "<group>"; };
+		B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderGoodsCell.m; sourceTree = "<group>"; };
+		B9599F112170438400C53F47 /* NMConfirmOrderAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderAddressCell.h; sourceTree = "<group>"; };
+		B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderAddressCell.m; sourceTree = "<group>"; };
+		B9599F14217043AD00C53F47 /* NMConfirmOrderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderFooterView.h; sourceTree = "<group>"; };
+		B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderFooterView.m; sourceTree = "<group>"; };
+		B9599F17217043CA00C53F47 /* NMConfirmOrderBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderBottomView.h; sourceTree = "<group>"; };
+		B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderBottomView.m; sourceTree = "<group>"; };
 		B95F63F6216B20C200650551 /* myBackImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myBackImg.png; sourceTree = "<group>"; };
 		B95F63F8216B25DD00650551 /* more_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@3x.png"; sourceTree = "<group>"; };
 		B95F63F9216B25DE00650551 /* more_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@2x.png"; sourceTree = "<group>"; };
@@ -658,6 +679,8 @@
 				B957B168216340DE009C60E6 /* 一级搜索页 */,
 				B9096C6B21646F3000EFC0F9 /* 二级搜索页 */,
 				B9C65433216EEDEB00875509 /* 更多（商品分类） */,
+				B9599EFC21702D4A00C53F47 /* 商品详情 */,
+				B9599EFD21702D5200C53F47 /* 确认订单 */,
 			);
 			path = "商城";
 			sourceTree = "<group>";
@@ -1073,6 +1096,58 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B9599EFC21702D4A00C53F47 /* 商品详情 */ = {
+			isa = PBXGroup;
+			children = (
+				B9599EFE21702E1100C53F47 /* NMGoodsDetailsViewController.h */,
+				B9599EFF21702E1100C53F47 /* NMGoodsDetailsViewController.m */,
+			);
+			path = "商品详情";
+			sourceTree = "<group>";
+		};
+		B9599EFD21702D5200C53F47 /* 确认订单 */ = {
+			isa = PBXGroup;
+			children = (
+				B9599F09217042D900C53F47 /* Controller */,
+				B9599F08217042D000C53F47 /* View */,
+				B9599F07217042BD00C53F47 /* Model */,
+			);
+			path = "确认订单";
+			sourceTree = "<group>";
+		};
+		B9599F07217042BD00C53F47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9599F08217042D000C53F47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9599F0B2170432900C53F47 /* NMConfirmOrderHeaderView.h */,
+				B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */,
+				B9599F0E2170433E00C53F47 /* NMConfirmOrderGoodsCell.h */,
+				B9599F0F2170433E00C53F47 /* NMConfirmOrderGoodsCell.m */,
+				B9599F112170438400C53F47 /* NMConfirmOrderAddressCell.h */,
+				B9599F122170438400C53F47 /* NMConfirmOrderAddressCell.m */,
+				B9599F14217043AD00C53F47 /* NMConfirmOrderFooterView.h */,
+				B9599F15217043AD00C53F47 /* NMConfirmOrderFooterView.m */,
+				B9599F17217043CA00C53F47 /* NMConfirmOrderBottomView.h */,
+				B9599F18217043CA00C53F47 /* NMConfirmOrderBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9599F09217042D900C53F47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9599F0421702F0100C53F47 /* NMConfirmOrderViewController.h */,
+				B9599F0521702F0100C53F47 /* NMConfirmOrderViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B9A599532165A8AD007B46BA /* 我的 */ = {
@@ -1547,6 +1622,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B957B16B2163412C009C60E6 /* NMFirstSearchViewController.m in Sources */,
+				B9599F19217043CA00C53F47 /* NMConfirmOrderBottomView.m in Sources */,
 				B95F63FE216B2C0000650551 /* UIView+Extension.m in Sources */,
 				B9142E2D215CDB8400762C63 /* NMBaseDataManageAction.m in Sources */,
 				B9E83628216F14F9003D2020 /* NMGoodsClassifyReusableView.m in Sources */,
@@ -1575,12 +1651,16 @@
 				B9C65436216EEE4C00875509 /* NMGoodsClassifyViewController.m in Sources */,
 				B9096C7E2164A06F00EFC0F9 /* NMWaterFlowCollectionViewLayout.m in Sources */,
 				B9096C642164692B00EFC0F9 /* NMSearchListTableViewCell.m in Sources */,
+				B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */,
 				B9A5994C2165A433007B46BA /* NMMineHeaderView.m in Sources */,
 				B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */,
 				B9D64791215E262700CF6122 /* NMTabBarItemAnimationManager.m in Sources */,
+				B9599F132170438400C53F47 /* NMConfirmOrderAddressCell.m in Sources */,
 				B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */,
 				B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */,
+				B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */,
 				B94A9B40215E043200A9C689 /* NMTabBar.m in Sources */,
+				B9599F0D2170432900C53F47 /* NMConfirmOrderHeaderView.m in Sources */,
 				B9A599522165A65E007B46BA /* NMMineModel.m in Sources */,
 				B9142DE9215CD2C900762C63 /* NMBaseTabBarController.m in Sources */,
 				A1F4C47821702D8E009D0641 /* NMMineOrderViewController.m in Sources */,
@@ -1594,8 +1674,10 @@
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,
 				B9142DD5215CCE4200762C63 /* NMAppDelegate.m in Sources */,
+				B9599F102170433E00C53F47 /* NMConfirmOrderGoodsCell.m in Sources */,
 				B9096C6921646F1D00EFC0F9 /* NMSecondSearchViewController.m in Sources */,
 				B9A6A3C4216DA7DB007563B5 /* NMMessageViewController.m in Sources */,
+				B9599F0621702F0100C53F47 /* NMConfirmOrderViewController.m in Sources */,
 				B9142DDE215CCF7100762C63 /* NMAppDelegate+RootController.m in Sources */,
 				B925D6432160A6110086FA21 /* ToolObject.m in Sources */,
 				B9A5994F2165A633007B46BA /* NMBaseModel.m in Sources */,

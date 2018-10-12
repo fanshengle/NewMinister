@@ -74,10 +74,19 @@
     NMCustomizeNavBarView *navBarView = [[NMCustomizeNavBarView alloc] initWithFrame:CGRectMake(0, 0, NMScreenWidth, NMNavbarHeight)];
     navBarView.navTitle = title;
     //布局默认导航栏子视图
-    [navBarView setupNavagationDefaultBar];
+    [navBarView setupNavagationBar];
     [self.view addSubview:navBarView];
     self.navBarView = navBarView;
-    [self.navBarView.leftBarItem addTarget:self action:@selector(popBeforeController) forControlEvents:UIControlEventTouchUpInside];
+    
+    if (self.navBarView.leftBarItem) {
+        
+        [self.navBarView.leftBarItem addTarget:self action:@selector(popBeforeController) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    if (self.navBarView.rightBarItem) {
+        
+        [self.navBarView.rightBarItem addTarget:self action:@selector(rightBarItemClick) forControlEvents:UIControlEventTouchUpInside];
+    }
 }
 
 #pragma mark -- 返回上一级页面
@@ -85,5 +94,11 @@
     
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark -- 导航栏右边按钮点击
+- (void)rightBarItemClick{
+    
+}
+
 
 @end

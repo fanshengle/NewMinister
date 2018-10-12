@@ -24,8 +24,13 @@
 @property (nonatomic,strong) UIButton *rightBarItem;
 @property (nonatomic,strong) UILabel *titleBarLab;
 
-#pragma mark -- 设置默认带有左边按钮和标题的导航栏
-- (void)setupNavagationDefaultBar;
+@property (nonatomic,assign) BOOL isHaveLeftItem;//是否有左边按钮 默认yes
+@property (nonatomic,assign) BOOL isHaveRightItem;//是否有右边按钮 默认no
 
+#pragma mark -- 设置默认带有标题是否有左右按钮的导航栏
+/**
+ ishaveLeft:是否有
+ */
+- (void)setupNavagationBar;
 
 @end

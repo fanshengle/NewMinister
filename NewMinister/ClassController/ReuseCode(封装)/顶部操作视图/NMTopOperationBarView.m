@@ -10,10 +10,6 @@
 
 @interface NMTopOperationBarView()
 
-@property (nonatomic,assign) CGFloat viewHeight;
-@property (nonatomic,assign) CGFloat left;
-@property (nonatomic,assign) CGFloat top;
-@property (nonatomic,assign) CGFloat bottom;
 
 @end
 
@@ -30,24 +26,20 @@
         
         self.backgroundColor = NMWhiteC;
 
-        self.viewHeight = frame.size.height;
-        self.left = NM10;
-        self.top = 25.0f;
-        self.bottom = 5.0f;
-        
+        CGFloat viewHeight = frame.size.height;
+        CGFloat left = 0;
+        CGFloat top = 25.0f;
+        CGFloat bottom = 5.0f;
+        CGFloat height = viewHeight - top - bottom;
         //左边返回按钮
         CGFloat leftWidth = 0.0;
         if (isHave) {//有左边返回按钮
+            
             leftWidth = 40.0;
             _leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+            _leftBtn.frame = CGRectMake(left, top, leftWidth, height);
             [_leftBtn setImage:[UIImage imageNamed:@"navBar_back"] forState:UIControlStateNormal];
             [self addSubview:_leftBtn];
-            [_leftBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.left.equalTo(self.mas_left).offset(0);
-                make.top.equalTo(self.mas_top).offset(self.top);
-                make.bottom.equalTo(self.mas_bottom).offset(-self.bottom);
-                make.width.equalTo(@(leftWidth));
-            }];
         }
         
         //右边按钮
@@ -64,16 +56,42 @@
                 [_rightBtn setTitleColor:NMadadad forState:UIControlStateNormal];
                 [_rightBtn.titleLabel setFont:NMSystemFont(13)];
             }
+            
             rightWidth = 50;
+            CGFloat rightX = frame.size.width - rightWidth;
+            _rightBtn.frame = CGRectMake(rightX, _leftBtn.top, rightWidth, _leftBtn.height);
+            [self addSubview:_rightBtn];
         }
-        [self addSubview:_rightBtn];
-        [_rightBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(self.mas_right);
-            make.top.equalTo(self.mas_top).offset(self.top);
-            make.bottom.equalTo(self.mas_bottom).offset(-self.bottom);
-            make.width.equalTo(@(rightWidth));
-        }];
         
+        CGFloat viewWidth = frame.size.width;
+        CGFloat searchJianJu = 0;
+        CGFloat searchWidth = 0;
+        //搜索视图
+        if (leftWidth == 0 && rightWidth == 0) {//没有左右按钮
+            
+            searchJianJu = NM15;
+            searchWidth = frame.size.width - searchJianJu*2;
+        }else if (leftWidth != 0 && rightWidth == 0){//有左按钮，没有右按钮
+            
+            searchJianJu = leftWidth;
+            searchWidth = viewWidth - leftWidth - NM15;
+        }else if(leftWidth == 0 && rightWidth != 0){//没有左按钮，有右按钮
+            
+            searchJianJu = NM15;
+            searchWidth = viewWidth - rightWidth - searchJianJu;
+        }else{//左右按钮都有
+            
+            searchJianJu = leftWidth;
+            searchWidth = viewWidth - leftWidth - rightWidth;
+        }
+        
+        _searchView = [[UIView alloc] initWithFrame:CGRectMake(searchJianJu, top, searchWidth, height)];
+        _searchView.backgroundColor = NMf1f1f1;
+        [self addSubview:_searchView];
+        //设置圆角
+        [_searchView setCornerRadius:height/2.0];
+
+        //在searchView上布局子视图
         [self setupSubviewsOnSearchView];
     }
     return self;
@@ -82,19 +100,7 @@
 #pragma mark -- 在searchView上布局子视图
 - (void)setupSubviewsOnSearchView{
     
-    //搜索视图
-    CGFloat searchViewHeight = _viewHeight - _top - _bottom;
-    _searchView = [[UIView alloc] init];
-    _searchView.layer.cornerRadius = searchViewHeight/2.0f;
-    _searchView.layer.masksToBounds = YES;
-    _searchView.backgroundColor = NMf1f1f1;
-    [self addSubview:_searchView];
-    [_searchView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.equalTo(self.rightBtn);
-        make.left.equalTo(self.leftBtn.mas_right).offset(0);
-        make.right.equalTo(self.rightBtn.mas_left);
-    }];
-    
+    CGFloat jianJu = NM10;
     //左边搜索图标
     CGFloat width = 14;
     _leftImgView = [[UIImageView alloc] init];
@@ -103,7 +109,7 @@
     [_searchView addSubview:_leftImgView];
     [_leftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self.searchView);
-        make.left.equalTo(self.searchView.mas_left).offset(self.left);
+        make.left.equalTo(self.searchView.mas_left).offset(jianJu);
         make.width.equalTo(@(width));
     }];
     
@@ -115,13 +121,13 @@
     //[_allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
     [_searchView addSubview:_allDeleteTextBtn];
     [_allDeleteTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self.searchView.mas_right).offset(-self.left);
+        make.right.equalTo(self.searchView.mas_right).offset(-jianJu);
         make.top.bottom.equalTo(self.searchView);
         make.width.equalTo(@(width));
     }];
     
     //搜索框
-    CGFloat textFieldLeft = 10.0;
+    CGFloat textFieldLeft = NM10;
     _searchTextField = [[UITextField alloc] init];
     _searchTextField.borderStyle = UITextBorderStyleNone;
     NSString *partStr = @"搜索商品/条码";
