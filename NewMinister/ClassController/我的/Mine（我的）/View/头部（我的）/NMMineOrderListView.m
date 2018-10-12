@@ -261,6 +261,7 @@
         object = [object nextResponder];
     }
     UIViewController *superController = (UIViewController*)object;
+    mineOrderVC.titleViewIndex=0;
     [superController.navigationController pushViewController:mineOrderVC animated:YES];
     
 }

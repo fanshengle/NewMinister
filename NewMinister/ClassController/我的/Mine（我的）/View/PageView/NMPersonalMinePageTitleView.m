@@ -84,9 +84,9 @@
 - (UIButton *)titleButton:(NSString *)title {
     UIButton* titleButton       = [[UIButton alloc] init];
     [titleButton addTarget:self action:@selector(titleButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    titleButton.titleLabel.font = [UIFont systemFontOfSize:15];
-    [titleButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [titleButton setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    titleButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [titleButton setTitleColor:[UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1] forState:UIControlStateNormal];
+    [titleButton setTitleColor:[UIColor colorWithRed:153/255.0 green:153/255.0 blue:153/255.0 alpha:1] forState:UIControlStateSelected];
     [titleButton setTitle:title forState:UIControlStateNormal];
     return titleButton;
 }
@@ -99,7 +99,7 @@
 - (void)makelineStartPoint:(CGFloat)statPoint andEndPoint:(CGFloat)endPoint {
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineCap(context, kCGLineCapRound);
-    CGContextSetLineWidth(context, 0.5);  //线宽
+    CGContextSetLineWidth(context, 0);  //线宽
     CGContextSetAllowsAntialiasing(context, true);
     CGContextSetStrokeColorWithColor(context, [UIColor grayColor].CGColor);
     CGContextBeginPath(context);
