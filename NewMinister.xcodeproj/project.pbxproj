@@ -10,6 +10,8 @@
 		0CBF4A04B39307EA24D1D5E9 /* libPods-NewMinisterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F09785A3FE981DC074BA4D /* libPods-NewMinisterTests.a */; };
 		666031ABDE040BFF5C34F654 /* libPods-NewMinisterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F70DB61826642846DC3C3 /* libPods-NewMinisterUITests.a */; };
 		89D43A001FC7B1148FAA3B64 /* libPods-NewMinister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9953528E495B2FF945C571 /* libPods-NewMinister.a */; };
+		A1F4C47821702D8E009D0641 /* NMMineOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */; };
+		A1F4C47C217041C9009D0641 /* NMPersonalMinePageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */; };
 		B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C562164601200EFC0F9 /* SearchCollectionCell.m */; };
 		B9096C5C2164601400EFC0F9 /* SearchReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C582164601300EFC0F9 /* SearchReusableView.m */; };
 		B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B9096C592164601400EFC0F9 /* SearchCollectionViewLayout.m */; };
@@ -161,6 +163,10 @@
 		4F9953528E495B2FF945C571 /* libPods-NewMinister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinister.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E86AB004FD32C91AA6BD0E /* Pods-NewMinisterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinisterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinisterUITests/Pods-NewMinisterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89192F8D30CDD1B842DCED56 /* Pods-NewMinister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinister.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinister/Pods-NewMinister.release.xcconfig"; sourceTree = "<group>"; };
+		A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderViewController.h; sourceTree = "<group>"; };
+		A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderViewController.m; sourceTree = "<group>"; };
+		A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPersonalMinePageTitleView.h; sourceTree = "<group>"; };
+		A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPersonalMinePageTitleView.m; sourceTree = "<group>"; };
 		B4F09785A3FE981DC074BA4D /* libPods-NewMinisterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinisterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9096C552164601200EFC0F9 /* SearchCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCollectionCell.h; sourceTree = "<group>"; };
 		B9096C562164601200EFC0F9 /* SearchCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCollectionCell.m; sourceTree = "<group>"; };
@@ -404,6 +410,15 @@
 				2D4FCBC1C447534546DA1FA1 /* Pods-NewMinisterUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1F4C47921704015009D0641 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */,
+				A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		B9096C6521646B7E00EFC0F9 /* 搜索记录 */ = {
@@ -817,6 +832,7 @@
 		B9142E28215CD8F000762C63 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1F4C47921704015009D0641 /* PageView */,
 				B9A599802166011D007B46BA /* 头部（我的） */,
 				B9A599542165B313007B46BA /* NMMineTableViewCell.h */,
 				B9A599552165B313007B46BA /* NMMineTableViewCell.m */,
@@ -829,6 +845,8 @@
 			children = (
 				B94A9B37215DD9A800A9C689 /* NMMineViewController.h */,
 				B94A9B38215DD9A800A9C689 /* NMMineViewController.m */,
+				A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */,
+				A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1550,6 +1568,7 @@
 				B9EFB98221631191004881D9 /* NMMallRecommendViewController.m in Sources */,
 				B9096C822164A9F500EFC0F9 /* NMNotesWaterFlowCollectionViewCell.m in Sources */,
 				B9096C5C2164601400EFC0F9 /* SearchReusableView.m in Sources */,
+				A1F4C47C217041C9009D0641 /* NMPersonalMinePageTitleView.m in Sources */,
 				B9A599562165B313007B46BA /* NMMineTableViewCell.m in Sources */,
 				B9142DEC215CD2E200762C63 /* NMBaseViewController.m in Sources */,
 				B9E83625216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m in Sources */,
@@ -1564,6 +1583,7 @@
 				B94A9B40215E043200A9C689 /* NMTabBar.m in Sources */,
 				B9A599522165A65E007B46BA /* NMMineModel.m in Sources */,
 				B9142DE9215CD2C900762C63 /* NMBaseTabBarController.m in Sources */,
+				A1F4C47821702D8E009D0641 /* NMMineOrderViewController.m in Sources */,
 				B925D6462160A79D0086FA21 /* NMTopOperationBarView.m in Sources */,
 				B910FA14216E21DC00FAE864 /* NMShufflingCollectionViewCell.m in Sources */,
 				B9142DD8215CCF5300762C63 /* NMAppDelegate+AppService.m in Sources */,

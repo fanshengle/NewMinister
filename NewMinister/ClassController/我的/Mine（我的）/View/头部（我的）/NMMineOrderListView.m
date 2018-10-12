@@ -7,6 +7,7 @@
 //
 
 #import "NMMineOrderListView.h"
+#import "NMMineOrderViewController.h"
 
 @interface NMMineOrderListView()
 {
@@ -68,6 +69,7 @@
     [allOrderBtn setTitleColor:NM999999 forState:UIControlStateNormal];
     [allOrderBtn setImage:[UIImage imageNamed:@"more_arrow"] forState:UIControlStateNormal];
     [firstView addSubview:allOrderBtn];
+    [allOrderBtn addTarget:self action:@selector(allOrderBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [allOrderBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(firstView.mas_right).offset(-NM15);
         make.centerY.equalTo(firstView);
@@ -250,5 +252,16 @@
     redLab.frame = CGRectMake(frame.origin.x, frame.origin.y, width, height);
 }
 
-
+#pragma mark -- 所有订单点击事件
+-(void)allOrderBtnClick:(UIButton *)sender{
+    
+    NMMineOrderViewController * mineOrderVC =[[NMMineOrderViewController alloc]init];
+    id object = [self nextResponder];
+    while (![object isKindOfClass:[UIViewController class]] && object != nil) {
+        object = [object nextResponder];
+    }
+    UIViewController *superController = (UIViewController*)object;
+    [superController.navigationController pushViewController:mineOrderVC animated:YES];
+    
+}
 @end
