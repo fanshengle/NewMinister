@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface NMMineOrderListView : UIView
 
 @property (nonatomic,strong) UIView *btnView;
@@ -17,4 +18,11 @@
 @property (nonatomic,strong) UIButton *waitEvaluateBtn;
 @property (nonatomic,strong) UIButton *afterSalesBtn;
 
+/**
+ *
+ */
+
+
 @end
+
+

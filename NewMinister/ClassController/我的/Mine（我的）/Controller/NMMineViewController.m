@@ -10,7 +10,7 @@
 
 #import "NMMineTableViewCell.h"
 #import "NMMineHeaderView.h"
-
+#import "NMMineOrderViewController.h"
 #import "NMMineModel.h"
 @interface NMMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>{
     
@@ -105,20 +105,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-            NMLog(@"点击了 我的钱包");
+//            NMLog(@"点击了 我的钱包");
             break;
         case 1:
-            NMLog(@"点击了 我的任务");
+//            NMLog(@"点击了 我的任务");
             break;
         case 2:
-            NMLog(@"点击了 我的好友");
+//            NMLog(@"点击了 我的好友");
             break;
         case 3:
-            NMLog(@"点击了 我的等级");
+//            NMLog(@"点击了 我的等级");
             break;
         default:
             break;
     }
+    
+    NMLog(@"点击了--%ld",(long)indexPath.row);
+
 }
 
 
