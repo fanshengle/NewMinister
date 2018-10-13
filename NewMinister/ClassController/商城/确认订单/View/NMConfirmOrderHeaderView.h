@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NMConfirmOrderHeaderView : UIView
+@interface NMConfirmOrderHeaderView : UITableViewHeaderFooterView
 
 @property (nonatomic,strong) UIImageView *shopImgView;
 @property (nonatomic,strong) UILabel *shopNameLab;
 
 - (void)refresh;
+
 @end

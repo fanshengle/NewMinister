@@ -14,12 +14,12 @@
 
 @implementation NMConfirmOrderHeaderView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
+
+    if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
+
+        self.contentView.backgroundColor = NMWhiteC;
     
-        self.backgroundColor = NMWhiteC;
     }
     return self;
 }
@@ -27,15 +27,14 @@
 #pragma mark -- 店铺logo
 - (UIImageView *)shopImgView{
     if (!_shopImgView) {
-        
+
         //店铺图片
         UIImageView *shopImgView = [[UIImageView alloc] init];
         shopImgView.contentMode = UIViewContentModeLeft;
-        shopImgView.image = [UIImage imageNamed:@"car_ShopImg"];
         [self addSubview:shopImgView];
         _shopImgView = shopImgView;
         [shopImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-            
+
             make.centerY.equalTo(self.mas_centerY);
             make.left.equalTo(self.mas_left).offset(NM15);
         }];
@@ -45,9 +44,9 @@
 
 #pragma mark -- 店铺名称lab
 - (UILabel *)shopNameLab{
-    
+
     if (!_shopNameLab) {
-        
+
         //配送方式lab
         UILabel *shopNameLab = [[UILabel alloc] init];
         shopNameLab.font = NMSystemFont(12);
@@ -62,11 +61,12 @@
     return _shopNameLab;
 }
 
-
 - (void)refresh{
     
-    [_shopNameLab setText:@"周丽店"];
+    self.shopImgView.image = [UIImage imageNamed:@"car_ShopImg"];
+    [self.shopNameLab setText:@"周丽店"];
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

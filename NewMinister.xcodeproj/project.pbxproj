@@ -60,6 +60,17 @@
 		B925D6522160B2090086FA21 /* allDelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6502160B2080086FA21 /* allDelete@3x.png */; };
 		B925D6532160B2090086FA21 /* allDelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6512160B2090086FA21 /* allDelete@2x.png */; };
 		B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = B93434C9215F5865006F01ED /* UIColor+colorChange.m */; };
+		B9456A592171DC4B0029B392 /* NMPayWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A582171DC4B0029B392 /* NMPayWayViewController.m */; };
+		B9456A622171E3CC0029B392 /* NMPayWayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A612171E3CC0029B392 /* NMPayWayTableViewCell.m */; };
+		B9456A662171E7690029B392 /* NMPayWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A652171E7690029B392 /* NMPayWayModel.m */; };
+		B9456A702171E83A0029B392 /* car_zhiFuBaoPay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A682171E8390029B392 /* car_zhiFuBaoPay@3x.png */; };
+		B9456A712171E83A0029B392 /* car_zhiFuBaoPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A692171E8390029B392 /* car_zhiFuBaoPay@2x.png */; };
+		B9456A722171E83A0029B392 /* car_wecatPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6A2171E8390029B392 /* car_wecatPay@2x.png */; };
+		B9456A732171E83A0029B392 /* car_qqWalletPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6B2171E8390029B392 /* car_qqWalletPay@2x.png */; };
+		B9456A742171E83A0029B392 /* car_qqWalletPay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6C2171E83A0029B392 /* car_qqWalletPay@3x.png */; };
+		B9456A752171E83A0029B392 /* car_ unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6D2171E83A0029B392 /* car_ unionpay@3x.png */; };
+		B9456A762171E83A0029B392 /* car_wecatPay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6E2171E83A0029B392 /* car_wecatPay@3x.png */; };
+		B9456A772171E83A0029B392 /* car_ unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9456A6F2171E83A0029B392 /* car_ unionpay@2x.png */; };
 		B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94A9B28215DD89E00A9C689 /* NMHomePageViewController.m */; };
 		B94A9B2F215DD8EC00A9C689 /* NMMallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94A9B2E215DD8EC00A9C689 /* NMMallViewController.m */; };
 		B94A9B33215DD91E00A9C689 /* NMPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B94A9B32215DD91E00A9C689 /* NMPublishViewController.m */; };
@@ -108,6 +119,7 @@
 		B9599F3B217098FB00C53F47 /* car_ArrowRed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F2F217098FA00C53F47 /* car_ArrowRed@3x.png */; };
 		B9599F3E21709ADC00C53F47 /* car_Backround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */; };
 		B9599F3F21709ADC00C53F47 /* car_Backround@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */; };
+		B9599F422170BD0300C53F47 /* NMConfirmOrderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9599F412170BD0300C53F47 /* NMConfirmOrderTableView.m */; };
 		B95F63F7216B20C200650551 /* myBackImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F6216B20C200650551 /* myBackImg.png */; };
 		B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F8216B25DD00650551 /* more_arrow@3x.png */; };
 		B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B95F63F9216B25DE00650551 /* more_arrow@2x.png */; };
@@ -167,6 +179,14 @@
 		B9EF85D8216C4EB70000AF10 /* NMPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF85D7216C4EB70000AF10 /* NMPublishButton.m */; };
 		B9EFB98221631191004881D9 /* NMMallRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFB98121631191004881D9 /* NMMallRecommendViewController.m */; };
 		B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EFB984216311A6004881D9 /* NMMallOtherViewController.m */; };
+		B9FC260C21719C6F00749FD2 /* car_BuyNow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC260A21719C6F00749FD2 /* car_BuyNow@2x.png */; };
+		B9FC260D21719C6F00749FD2 /* car_BuyNow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC260B21719C6F00749FD2 /* car_BuyNow@3x.png */; };
+		B9FC26102171B9D700749FD2 /* car_addressBack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC260E2171B9D700749FD2 /* car_addressBack@3x.png */; };
+		B9FC26112171B9D700749FD2 /* car_addressBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC260F2171B9D700749FD2 /* car_addressBack@2x.png */; };
+		B9FC26142171BF1B00749FD2 /* car_Becareful@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC26122171BF1A00749FD2 /* car_Becareful@2x.png */; };
+		B9FC26152171BF1B00749FD2 /* car_Becareful@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC26132171BF1A00749FD2 /* car_Becareful@3x.png */; };
+		B9FC26182171C3F500749FD2 /* car_Location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC26162171C3F500749FD2 /* car_Location@2x.png */; };
+		B9FC26192171C3F500749FD2 /* car_Location@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC26172171C3F500749FD2 /* car_Location@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +306,20 @@
 		B925D6512160B2090086FA21 /* allDelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allDelete@2x.png"; sourceTree = "<group>"; };
 		B93434C8215F5865006F01ED /* UIColor+colorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorChange.h"; sourceTree = "<group>"; };
 		B93434C9215F5865006F01ED /* UIColor+colorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colorChange.m"; sourceTree = "<group>"; };
+		B9456A572171DC4B0029B392 /* NMPayWayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayWayViewController.h; sourceTree = "<group>"; };
+		B9456A582171DC4B0029B392 /* NMPayWayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayWayViewController.m; sourceTree = "<group>"; };
+		B9456A602171E3CC0029B392 /* NMPayWayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayWayTableViewCell.h; sourceTree = "<group>"; };
+		B9456A612171E3CC0029B392 /* NMPayWayTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayWayTableViewCell.m; sourceTree = "<group>"; };
+		B9456A642171E7690029B392 /* NMPayWayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayWayModel.h; sourceTree = "<group>"; };
+		B9456A652171E7690029B392 /* NMPayWayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayWayModel.m; sourceTree = "<group>"; };
+		B9456A682171E8390029B392 /* car_zhiFuBaoPay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_zhiFuBaoPay@3x.png"; sourceTree = "<group>"; };
+		B9456A692171E8390029B392 /* car_zhiFuBaoPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_zhiFuBaoPay@2x.png"; sourceTree = "<group>"; };
+		B9456A6A2171E8390029B392 /* car_wecatPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_wecatPay@2x.png"; sourceTree = "<group>"; };
+		B9456A6B2171E8390029B392 /* car_qqWalletPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_qqWalletPay@2x.png"; sourceTree = "<group>"; };
+		B9456A6C2171E83A0029B392 /* car_qqWalletPay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_qqWalletPay@3x.png"; sourceTree = "<group>"; };
+		B9456A6D2171E83A0029B392 /* car_ unionpay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ unionpay@3x.png"; sourceTree = "<group>"; };
+		B9456A6E2171E83A0029B392 /* car_wecatPay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_wecatPay@3x.png"; sourceTree = "<group>"; };
+		B9456A6F2171E83A0029B392 /* car_ unionpay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ unionpay@2x.png"; sourceTree = "<group>"; };
 		B94A9B27215DD89E00A9C689 /* NMHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMHomePageViewController.h; sourceTree = "<group>"; };
 		B94A9B28215DD89E00A9C689 /* NMHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMHomePageViewController.m; sourceTree = "<group>"; };
 		B94A9B2D215DD8EC00A9C689 /* NMMallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMMallViewController.h; sourceTree = "<group>"; };
@@ -354,6 +388,8 @@
 		B9599F2F217098FA00C53F47 /* car_ArrowRed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_ArrowRed@3x.png"; sourceTree = "<group>"; };
 		B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Backround@2x.png"; sourceTree = "<group>"; };
 		B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Backround@3x.png"; sourceTree = "<group>"; };
+		B9599F402170BD0300C53F47 /* NMConfirmOrderTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMConfirmOrderTableView.h; sourceTree = "<group>"; };
+		B9599F412170BD0300C53F47 /* NMConfirmOrderTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMConfirmOrderTableView.m; sourceTree = "<group>"; };
 		B95F63F6216B20C200650551 /* myBackImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myBackImg.png; sourceTree = "<group>"; };
 		B95F63F8216B25DD00650551 /* more_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@3x.png"; sourceTree = "<group>"; };
 		B95F63F9216B25DE00650551 /* more_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "more_arrow@2x.png"; sourceTree = "<group>"; };
@@ -431,6 +467,14 @@
 		B9EFB98121631191004881D9 /* NMMallRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMallRecommendViewController.m; sourceTree = "<group>"; };
 		B9EFB983216311A6004881D9 /* NMMallOtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMallOtherViewController.h; sourceTree = "<group>"; };
 		B9EFB984216311A6004881D9 /* NMMallOtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMallOtherViewController.m; sourceTree = "<group>"; };
+		B9FC260A21719C6F00749FD2 /* car_BuyNow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_BuyNow@2x.png"; sourceTree = "<group>"; };
+		B9FC260B21719C6F00749FD2 /* car_BuyNow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_BuyNow@3x.png"; sourceTree = "<group>"; };
+		B9FC260E2171B9D700749FD2 /* car_addressBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_addressBack@3x.png"; sourceTree = "<group>"; };
+		B9FC260F2171B9D700749FD2 /* car_addressBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_addressBack@2x.png"; sourceTree = "<group>"; };
+		B9FC26122171BF1A00749FD2 /* car_Becareful@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Becareful@2x.png"; sourceTree = "<group>"; };
+		B9FC26132171BF1A00749FD2 /* car_Becareful@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Becareful@3x.png"; sourceTree = "<group>"; };
+		B9FC26162171C3F500749FD2 /* car_Location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Location@2x.png"; sourceTree = "<group>"; };
+		B9FC26172171C3F500749FD2 /* car_Location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_Location@3x.png"; sourceTree = "<group>"; };
 		C886AFD893BBEE86491810FB /* Pods-NewMinisterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinisterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinisterTests/Pods-NewMinisterTests.release.xcconfig"; sourceTree = "<group>"; };
 		E46F70DB61826642846DC3C3 /* libPods-NewMinisterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinisterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -785,6 +829,7 @@
 				B9C65433216EEDEB00875509 /* 更多（商品分类） */,
 				B9599EFC21702D4A00C53F47 /* 商品详情 */,
 				B9599EFD21702D5200C53F47 /* 确认订单 */,
+				B9456A5A2171E2400029B392 /* 支付方式 */,
 			);
 			path = "商城";
 			sourceTree = "<group>";
@@ -1069,6 +1114,58 @@
 			path = tabbar;
 			sourceTree = "<group>";
 		};
+		B9456A5A2171E2400029B392 /* 支付方式 */ = {
+			isa = PBXGroup;
+			children = (
+				B9456A632171E7480029B392 /* Model */,
+				B9456A5C2171E2BD0029B392 /* View */,
+				B9456A5B2171E2AD0029B392 /* Controller */,
+			);
+			path = "支付方式";
+			sourceTree = "<group>";
+		};
+		B9456A5B2171E2AD0029B392 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9456A572171DC4B0029B392 /* NMPayWayViewController.h */,
+				B9456A582171DC4B0029B392 /* NMPayWayViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9456A5C2171E2BD0029B392 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9456A602171E3CC0029B392 /* NMPayWayTableViewCell.h */,
+				B9456A612171E3CC0029B392 /* NMPayWayTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9456A632171E7480029B392 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9456A642171E7690029B392 /* NMPayWayModel.h */,
+				B9456A652171E7690029B392 /* NMPayWayModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9456A672171E82B0029B392 /* 支付方式 */ = {
+			isa = PBXGroup;
+			children = (
+				B9456A6F2171E83A0029B392 /* car_ unionpay@2x.png */,
+				B9456A6D2171E83A0029B392 /* car_ unionpay@3x.png */,
+				B9456A6B2171E8390029B392 /* car_qqWalletPay@2x.png */,
+				B9456A6C2171E83A0029B392 /* car_qqWalletPay@3x.png */,
+				B9456A6A2171E8390029B392 /* car_wecatPay@2x.png */,
+				B9456A6E2171E83A0029B392 /* car_wecatPay@3x.png */,
+				B9456A692171E8390029B392 /* car_zhiFuBaoPay@2x.png */,
+				B9456A682171E8390029B392 /* car_zhiFuBaoPay@3x.png */,
+			);
+			path = "支付方式";
+			sourceTree = "<group>";
+		};
 		B94A9B30215DD8F400A9C689 /* Home（首页） */ = {
 			isa = PBXGroup;
 			children = (
@@ -1235,6 +1332,8 @@
 		B9599F08217042D000C53F47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B9599F402170BD0300C53F47 /* NMConfirmOrderTableView.h */,
+				B9599F412170BD0300C53F47 /* NMConfirmOrderTableView.m */,
 				B9599F0B2170432900C53F47 /* NMConfirmOrderHeaderView.h */,
 				B9599F0C2170432900C53F47 /* NMConfirmOrderHeaderView.m */,
 				B9599F1A21708BA000C53F47 /* NMConfirmOrderGoodsCell.h */,
@@ -1263,6 +1362,13 @@
 		B9599F23217098CB00C53F47 /* 购物车 */ = {
 			isa = PBXGroup;
 			children = (
+				B9456A672171E82B0029B392 /* 支付方式 */,
+				B9FC26162171C3F500749FD2 /* car_Location@2x.png */,
+				B9FC26172171C3F500749FD2 /* car_Location@3x.png */,
+				B9FC260F2171B9D700749FD2 /* car_addressBack@2x.png */,
+				B9FC260E2171B9D700749FD2 /* car_addressBack@3x.png */,
+				B9FC260A21719C6F00749FD2 /* car_BuyNow@2x.png */,
+				B9FC260B21719C6F00749FD2 /* car_BuyNow@3x.png */,
 				B9599F3C21709ADB00C53F47 /* car_Backround@2x.png */,
 				B9599F3D21709ADC00C53F47 /* car_Backround@3x.png */,
 				B9599F2B217098FA00C53F47 /* car_ArrowGray@2x.png */,
@@ -1277,6 +1383,8 @@
 				B9599F27217098F900C53F47 /* car_DropDown@3x.png */,
 				B9599F25217098F800C53F47 /* car_ShopImg@2x.png */,
 				B9599F29217098F900C53F47 /* car_ShopImg@3x.png */,
+				B9FC26122171BF1A00749FD2 /* car_Becareful@2x.png */,
+				B9FC26132171BF1A00749FD2 /* car_Becareful@3x.png */,
 			);
 			path = "购物车";
 			sourceTree = "<group>";
@@ -1589,8 +1697,10 @@
 				B95F640C216B502F00650551 /* myWaitEvaluate@2x.png in Resources */,
 				B94A9B55215E05A700A9C689 /* tabItem1Normal@3x.png in Resources */,
 				B9096C6F2164891300EFC0F9 /* navBar_back@3x.png in Resources */,
+				B9FC26142171BF1B00749FD2 /* car_Becareful@2x.png in Resources */,
 				B9599F3E21709ADC00C53F47 /* car_Backround@2x.png in Resources */,
 				B9599F32217098FB00C53F47 /* car_chooseSelect@2x.png in Resources */,
+				B9456A772171E83A0029B392 /* car_ unionpay@2x.png in Resources */,
 				B9A599712165C2AE007B46BA /* mySetUp@2x.png in Resources */,
 				B95F63F7216B20C200650551 /* myBackImg.png in Resources */,
 				B925D64D2160B1790086FA21 /* mail_SearchIconGray@3x.png in Resources */,
@@ -1600,6 +1710,7 @@
 				B9A6A3D7216DC661007563B5 /* huozan_shoucang@3x.png in Resources */,
 				B94A9B5B215E05A700A9C689 /* tabItem4Normal@3x.png in Resources */,
 				B9A5995C2165C229007B46BA /* myNotes@2x.png in Resources */,
+				B9456A732171E83A0029B392 /* car_qqWalletPay@2x.png in Resources */,
 				B9A5998421660C23007B46BA /* myUserLogo_Not@3x.png in Resources */,
 				B94A9B65215E062D00A9C689 /* tabItem5Normal@3x.png in Resources */,
 				B95F6404216B502300650551 /* myWaitPay@2x.png in Resources */,
@@ -1612,6 +1723,7 @@
 				B94A9B57215E05A700A9C689 /* tabItem3Normal@3x.png in Resources */,
 				B9A599722165C2AE007B46BA /* mySetUp@3x.png in Resources */,
 				B9096C61216461A000EFC0F9 /* search_empty@3x.png in Resources */,
+				B9456A712171E83A0029B392 /* car_zhiFuBaoPay@2x.png in Resources */,
 				B9599F33217098FB00C53F47 /* car_DropDown@3x.png in Resources */,
 				B9A599612165C24A007B46BA /* myNews@2x.png in Resources */,
 				B9A6A3DD216DC661007563B5 /* tongzhi@3x.png in Resources */,
@@ -1620,14 +1732,17 @@
 				B9599F37217098FB00C53F47 /* car_ArrowGray@2x.png in Resources */,
 				B9A599622165C24A007B46BA /* myNews@3x.png in Resources */,
 				B9599F35217098FB00C53F47 /* car_ShopImg@3x.png in Resources */,
+				B9456A752171E83A0029B392 /* car_ unionpay@3x.png in Resources */,
 				B9A6A3D4216DC661007563B5 /* guanzhu@3x.png in Resources */,
 				B94A9B60215E05A700A9C689 /* tabItem5Select@3x.png in Resources */,
 				B95F640E216B502F00650551 /* myWaitEvaluate@3x.png in Resources */,
+				B9FC26182171C3F500749FD2 /* car_Location@2x.png in Resources */,
 				B95F6406216B502300650551 /* myWaitSend@2x.png in Resources */,
 				B925D64F2160B1790086FA21 /* mail_SearchIconGray@2x.png in Resources */,
 				B94A9B52215E05A700A9C689 /* tabItem2Normal@3x.png in Resources */,
 				B9A6A3DB216DC661007563B5 /* sixin@2x.png in Resources */,
 				B9599F1E21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib in Resources */,
+				B9FC260D21719C6F00749FD2 /* car_BuyNow@3x.png in Resources */,
 				B95F6412216B504500650551 /* myAfterSales@2x.png in Resources */,
 				B9599F34217098FB00C53F47 /* car_chooseNormal@3x.png in Resources */,
 				B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */,
@@ -1635,13 +1750,18 @@
 				B9599F222170912400C53F47 /* NMConfirmOrderFooterView.xib in Resources */,
 				B9A6A3DA216DC661007563B5 /* tongzhi@2x.png in Resources */,
 				B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */,
+				B9456A742171E83A0029B392 /* car_qqWalletPay@3x.png in Resources */,
+				B9FC26102171B9D700749FD2 /* car_addressBack@3x.png in Resources */,
 				B9A5995B2165C229007B46BA /* myNotes@3x.png in Resources */,
+				B9456A722171E83A0029B392 /* car_wecatPay@2x.png in Resources */,
 				B9A5996E2165C2A2007B46BA /* myService@3x.png in Resources */,
 				B94A9B5C215E05A700A9C689 /* tabItem3Normal@2x.png in Resources */,
 				B9096C6E2164891300EFC0F9 /* navBar_back@2x.png in Resources */,
+				B9456A762171E83A0029B392 /* car_wecatPay@3x.png in Resources */,
 				B9599F38217098FB00C53F47 /* car_ArrowGray@3x.png in Resources */,
 				B9A5995E2165C229007B46BA /* myWallet@3x.png in Resources */,
 				B9A599752165C31F007B46BA /* arrow_Icon@3x.png in Resources */,
+				B9FC26192171C3F500749FD2 /* car_Location@3x.png in Resources */,
 				B94A9B5A215E05A700A9C689 /* tabItem5Select@2x.png in Resources */,
 				B9599F3F21709ADC00C53F47 /* car_Backround@3x.png in Resources */,
 				B925D6522160B2090086FA21 /* allDelete@3x.png in Resources */,
@@ -1652,8 +1772,12 @@
 				B9A5995D2165C229007B46BA /* myWallet@2x.png in Resources */,
 				B9A5998321660C23007B46BA /* myUserLogo_Not@2x.png in Resources */,
 				B94A9B58215E05A700A9C689 /* tabItem4Select@2x.png in Resources */,
+				B9456A702171E83A0029B392 /* car_zhiFuBaoPay@3x.png in Resources */,
+				B9FC26152171BF1B00749FD2 /* car_Becareful@3x.png in Resources */,
 				B9599F3A217098FB00C53F47 /* car_ArrowRed@2x.png in Resources */,
+				B9FC260C21719C6F00749FD2 /* car_BuyNow@2x.png in Resources */,
 				B9599F30217098FB00C53F47 /* car_chooseSelect@3x.png in Resources */,
+				B9FC26112171B9D700749FD2 /* car_addressBack@2x.png in Resources */,
 				B9096C60216461A000EFC0F9 /* search_empty@2x.png in Resources */,
 				B94A9B59215E05A700A9C689 /* tabItem2Select@2x.png in Resources */,
 				B9599F39217098FB00C53F47 /* car_DropDown@2x.png in Resources */,
@@ -1803,6 +1927,7 @@
 				B9E83625216F14D1003D2020 /* NMGoodsClassifyCollectionViewCell.m in Sources */,
 				B9C65436216EEE4C00875509 /* NMGoodsClassifyViewController.m in Sources */,
 				B9096C7E2164A06F00EFC0F9 /* NMWaterFlowCollectionViewLayout.m in Sources */,
+				B9456A622171E3CC0029B392 /* NMPayWayTableViewCell.m in Sources */,
 				B9096C642164692B00EFC0F9 /* NMSearchListTableViewCell.m in Sources */,
 				A1F4C482217067E4009D0641 /* NMContentTableView.m in Sources */,
 				B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */,
@@ -1813,6 +1938,8 @@
 				B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */,
 				B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */,
 				B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */,
+				B9456A662171E7690029B392 /* NMPayWayModel.m in Sources */,
+				B9456A592171DC4B0029B392 /* NMPayWayViewController.m in Sources */,
 				B94A9B40215E043200A9C689 /* NMTabBar.m in Sources */,
 				B9599F0D2170432900C53F47 /* NMConfirmOrderHeaderView.m in Sources */,
 				B9A599522165A65E007B46BA /* NMMineModel.m in Sources */,
@@ -1823,6 +1950,7 @@
 				B9142DD8215CCF5300762C63 /* NMAppDelegate+AppService.m in Sources */,
 				B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */,
 				B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */,
+				B9599F422170BD0300C53F47 /* NMConfirmOrderTableView.m in Sources */,
 				B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */,
 				B94A9B36215DD95B00A9C689 /* NMAllianceViewController.m in Sources */,
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,

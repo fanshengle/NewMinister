@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+        self.backgroundColor = NMWhiteC;
         [self combinedLab];
         [self priceLab];
         [self buyNowBtn];
@@ -69,19 +70,26 @@
      
         CGFloat width = NM110;
         CGFloat height = NM35;
-        UIButton *buyNowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        buyNowBtn.backgroundColor = NMe46362;
-        [buyNowBtn.titleLabel setFont:NMSystemFont(14)];
-        [buyNowBtn setTitle:@"立即购买" forState:UIControlStateNormal];
-        [buyNowBtn setTitleColor:NMWhiteC forState:UIControlStateNormal];
-        [self addSubview:buyNowBtn];
-        _buyNowBtn = buyNowBtn;
-        
-        [buyNowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        UIImageView *buyNowBackView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"car_BuyNow"]];
+        [self addSubview:buyNowBackView];
+        [buyNowBackView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(self.mas_right).offset(-NM15);
             make.centerY.equalTo(self.mas_centerY);
             make.width.equalTo(@(width));
             make.height.equalTo(@(height));
+        }];
+        
+        UIButton *buyNowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [buyNowBtn.titleLabel setFont:NMSystemFont(14)];
+        [buyNowBtn setTitle:@"立即购买" forState:UIControlStateNormal];
+        [buyNowBtn setTitleColor:NMWhiteC forState:UIControlStateNormal];
+        [buyNowBtn addTarget:self action:@selector(buyNowAction:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:buyNowBtn];
+        _buyNowBtn = buyNowBtn;
+        
+        [buyNowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.edges.equalTo(buyNowBackView);
         }];
         
         //设置圆角
@@ -90,6 +98,14 @@
     return _buyNowBtn;
 }
 
+#pragma mark -- 立即购买
+- (void)buyNowAction:(UIButton *)button{
+    
+    if (self.BuyNowClickBlock) {
+        
+        self.BuyNowClickBlock(600);
+    }
+}
 
 
 /*

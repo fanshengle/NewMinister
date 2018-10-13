@@ -15,7 +15,6 @@
 #define NMSystemFont(FONTSIZE)                [UIFont systemFontOfSize:FONTSIZE]
 #define NMFontWithName(NAME, FONTSIZE)        [UIFont fontWithName:(NAME) size:(FONTSIZE)]
 
-
 //#define NMStandardFont7 [UIFont systemFontOfSize:7]        //标准适配字体7
 //#define NMStandardFont9 [UIFont systemFontOfSize:9]        //标准适配字体9
 //#define NMStandardFont10 [UIFont systemFontOfSize:10]      //标准适配字体10

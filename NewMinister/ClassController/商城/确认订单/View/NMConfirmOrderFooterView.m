@@ -10,22 +10,20 @@
 
 @implementation NMConfirmOrderFooterView
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+- (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier{
+    
+    if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
         
     }
     return self;
 }
 
-
 - (void)refresh{
     
-    _preferentialLab.text = @"-￥100.0";
-    _freightLab.text = @"￥10";
-    _totalCountLab.text = NSStringFormat(@"共%@件商品",@"3");
-    _combinedLab.text = @"￥600.00";
+    self.preferentialLab.text = @"-￥100.0";
+    self.freightLab.text = @"￥10";
+    self.totalCountLab.text = NSStringFormat(@"共%@件商品",@"3");
+    self.combinedLab.text = @"￥600.00";
 }
 
 

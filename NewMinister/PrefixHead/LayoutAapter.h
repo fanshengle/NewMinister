@@ -30,9 +30,12 @@
 
 //获取各个
 #define NMStatusBarHeight        [[UIApplication sharedApplication] statusBarFrame].size.height                         //状态栏高度
-#define NMNavbarHeight           ([[UIApplication sharedApplication] statusBarFrame].size.height>20?84:64)              //导航栏高度
+#define NMNavbarHeight           ([[UIApplication sharedApplication] statusBarFrame].size.height>20?84:64)              //导航栏和标签栏的总高度
 #define NMTabbarHeight           ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)              //底部Tabbar高度
-#define NMTopBarHeight           (NMStatusBarHeight + NMNavBarHeight)                                                   //导航栏和标签栏的总高度
+
+#define NMBottomBarHeight         49.0//底部按钮视图高度
+
+//#define NMTopBarHeight           (NMStatusBarHeight + NMNavBarHeight)                                                   //导航栏和标签栏的总高度
 
 
 #define NM2  2.
@@ -57,6 +60,7 @@
 #define NM88 88.
 
 #define NM110 110.
+#define NM180 180.
 
 #define SPCornerRadius 5.0f                                         //通用半径
 
