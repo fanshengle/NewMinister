@@ -50,8 +50,8 @@
     __weak typeof(self) weakSelf = self;
     titleView.titles= @[@"全部", @"待付款", @"待发货", @"已发货", @"待评价"];
     [self.view addSubview:titleView];
-    titleView.selectedIndex      = _titleViewIndex;
-    titleView.buttonSelected     = ^(NSInteger index){
+    titleView.selectedIndex= _titleViewIndex;
+    titleView.buttonSelected= ^(NSInteger index){
         [weakSelf.scrollView setContentOffset:CGPointMake(NMScreenWidth * index, 0) animated:YES];
     };
 
@@ -71,12 +71,13 @@
     scrollView.contentSize= CGSizeMake(NMScreenWidth * 5, 0);
     [self.view addSubview:_scrollView];
     
+    
+    
     NMContentTableView *allTableView = [[NMContentTableView alloc] init];
     allTableView.backgroundColor=[UIColor colorWithRed:244/255.0 green:248/255.0 blue:251/255.0 alpha:1];
     allTableView.separatorStyle= UITableViewCellSeparatorStyleNone;
     self.allTableView= allTableView;
     [scrollView addSubview:allTableView];
-    
     
     NMContentTableView *payTableView = [[NMContentTableView alloc] init];
     payTableView.frame=CGRectMake(NMScreenWidth, 0, NMScreenWidth, NMScreenHeight-_titleView.frame.size.height-NMNavbarHeight);
