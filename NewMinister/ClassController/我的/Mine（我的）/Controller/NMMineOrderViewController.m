@@ -72,7 +72,6 @@
     [self.view addSubview:_scrollView];
     
     NMContentTableView *allTableView = [[NMContentTableView alloc] init];
-    allTableView.frame=CGRectMake(0, 0, NMScreenWidth, NMScreenHeight-_titleView.frame.size.height-NMNavbarHeight);
     allTableView.backgroundColor=[UIColor colorWithRed:244/255.0 green:248/255.0 blue:251/255.0 alpha:1];
     allTableView.separatorStyle= UITableViewCellSeparatorStyleNone;
     self.allTableView= allTableView;
@@ -106,7 +105,6 @@
     evaluationTableView.separatorStyle= UITableViewCellSeparatorStyleNone;
     self.allTableView= evaluationTableView;
     [scrollView addSubview:evaluationTableView];
-
 
 }
 #pragma mark - UIScrollViewDelegate

@@ -138,12 +138,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/ReuseCode(&#x5c01;&#x88c5;)/&#x9876;&#x90e8;&#x64cd;&#x4f5c;&#x89c6;&#x56fe;/NMTopOperationBarView.m"
-            timestampString = "561030840.072786"
+            timestampString = "561039982.3729039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
             landmarkName = "-initTopSearchViewWithFrame:isHaveLeft:rightTitle:rightImgStr:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x6211;&#x7684;/Mine&#xff08;&#x6211;&#x7684;&#xff09;/Controller/NMMineOrderViewController.m"
+            timestampString = "561104274.024497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "-scrollViewDidEndDecelerating:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x6211;&#x7684;/Mine&#xff08;&#x6211;&#x7684;&#xff09;/Controller/NMMineOrderViewController.m"
+            timestampString = "561104274.024568"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-setupHeaderView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x6211;&#x7684;/Mine&#xff08;&#x6211;&#x7684;&#xff09;/View/PageView/NMPersonalMinePageTitleView.m"
+            timestampString = "561035053.649536"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "-drawRect:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x786e;&#x8ba4;&#x8ba2;&#x5355;/Controller/NMConfirmOrderViewController.m"
+            timestampString = "561111124.069096"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-bottomView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

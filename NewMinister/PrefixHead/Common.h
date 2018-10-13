@@ -12,7 +12,7 @@
 
 //强弱引用
 #define NMWeakSelf(type)        __weak typeof(type) weak##type = type;
-#define NMStrongSelf(type)      __strong typeof(type) type = weak##type;
+#define NMStrongSelf(type)      __strong typeof(type) strong##type = weak##type;
 
 // 当前系统版本
 #define CurrentSystemVersion    [[UIDevice currentDevice].systemVersion doubleValue]

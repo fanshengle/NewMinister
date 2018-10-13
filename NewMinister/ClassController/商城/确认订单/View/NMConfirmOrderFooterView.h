@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NMConfirmOrderFooterView : UIView
+@interface NMConfirmOrderFooterView : UITableViewHeaderFooterView
 
 
 @property (strong, nonatomic) IBOutlet UIView *couponView;
