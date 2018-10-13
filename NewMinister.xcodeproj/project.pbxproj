@@ -10,6 +10,12 @@
 		0CBF4A04B39307EA24D1D5E9 /* libPods-NewMinisterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F09785A3FE981DC074BA4D /* libPods-NewMinisterTests.a */; };
 		666031ABDE040BFF5C34F654 /* libPods-NewMinisterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F70DB61826642846DC3C3 /* libPods-NewMinisterUITests.a */; };
 		89D43A001FC7B1148FAA3B64 /* libPods-NewMinister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9953528E495B2FF945C571 /* libPods-NewMinister.a */; };
+		A15E85CD21719807000B4736 /* NMMineOrderTabViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */; };
+		A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */; };
+		A15E85D321719D3C000B4736 /* NMMineOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */; };
+		A15E85D72171B87C000B4736 /* NMOrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D62171B87C000B4736 /* NMOrderDetailsViewController.m */; };
+		A15E85DA2171BA50000B4736 /* NMOrderDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D92171BA50000B4736 /* NMOrderDetailsTableViewCell.m */; };
+		A15E85DE2171E023000B4736 /* NMOrderDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85DD2171E023000B4736 /* NMOrderDetailsView.m */; };
 		A1F4C47821702D8E009D0641 /* NMMineOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */; };
 		A1F4C47C217041C9009D0641 /* NMPersonalMinePageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */; };
 		A1F4C482217067E4009D0641 /* NMContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4C481217067E4009D0641 /* NMContentTableView.m */; };
@@ -187,6 +193,18 @@
 		4F9953528E495B2FF945C571 /* libPods-NewMinister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinister.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E86AB004FD32C91AA6BD0E /* Pods-NewMinisterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinisterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinisterUITests/Pods-NewMinisterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89192F8D30CDD1B842DCED56 /* Pods-NewMinister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinister.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinister/Pods-NewMinister.release.xcconfig"; sourceTree = "<group>"; };
+		A15E85CB21719807000B4736 /* NMMineOrderTabViewHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewHeadView.h; sourceTree = "<group>"; };
+		A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTabViewHeadView.m; sourceTree = "<group>"; };
+		A15E85CE21719B91000B4736 /* NMMineOrderTabViewFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewFooterView.h; sourceTree = "<group>"; };
+		A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTabViewFooterView.m; sourceTree = "<group>"; };
+		A15E85D121719D3C000B4736 /* NMMineOrderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTableViewCell.h; sourceTree = "<group>"; };
+		A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTableViewCell.m; sourceTree = "<group>"; };
+		A15E85D52171B87C000B4736 /* NMOrderDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMOrderDetailsViewController.h; sourceTree = "<group>"; };
+		A15E85D62171B87C000B4736 /* NMOrderDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOrderDetailsViewController.m; sourceTree = "<group>"; };
+		A15E85D82171BA50000B4736 /* NMOrderDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMOrderDetailsTableViewCell.h; sourceTree = "<group>"; };
+		A15E85D92171BA50000B4736 /* NMOrderDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOrderDetailsTableViewCell.m; sourceTree = "<group>"; };
+		A15E85DC2171E023000B4736 /* NMOrderDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMOrderDetailsView.h; sourceTree = "<group>"; };
+		A15E85DD2171E023000B4736 /* NMOrderDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOrderDetailsView.m; sourceTree = "<group>"; };
 		A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderViewController.h; sourceTree = "<group>"; };
 		A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderViewController.m; sourceTree = "<group>"; };
 		A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPersonalMinePageTitleView.h; sourceTree = "<group>"; };
@@ -468,15 +486,64 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A1F4C47921704015009D0641 /* PageView */ = {
+		A15E85C82171977F000B4736 /* 区头 */ = {
 			isa = PBXGroup;
 			children = (
+				A15E85CB21719807000B4736 /* NMMineOrderTabViewHeadView.h */,
+				A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */,
+			);
+			path = "区头";
+			sourceTree = "<group>";
+		};
+		A15E85C92171978E000B4736 /* 区尾 */ = {
+			isa = PBXGroup;
+			children = (
+				A15E85CE21719B91000B4736 /* NMMineOrderTabViewFooterView.h */,
+				A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */,
+			);
+			path = "区尾";
+			sourceTree = "<group>";
+		};
+		A15E85CA21719796000B4736 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A15E85D121719D3C000B4736 /* NMMineOrderTableViewCell.h */,
+				A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A15E85D42171B80E000B4736 /* 订单详情 */ = {
+			isa = PBXGroup;
+			children = (
+				A15E85DB2171DFC0000B4736 /* 订单信息 */,
+				A15E85D82171BA50000B4736 /* NMOrderDetailsTableViewCell.h */,
+				A15E85D92171BA50000B4736 /* NMOrderDetailsTableViewCell.m */,
+			);
+			path = "订单详情";
+			sourceTree = "<group>";
+		};
+		A15E85DB2171DFC0000B4736 /* 订单信息 */ = {
+			isa = PBXGroup;
+			children = (
+				A15E85DC2171E023000B4736 /* NMOrderDetailsView.h */,
+				A15E85DD2171E023000B4736 /* NMOrderDetailsView.m */,
+			);
+			path = "订单信息";
+			sourceTree = "<group>";
+		};
+		A1F4C47921704015009D0641 /* 我的订单 */ = {
+			isa = PBXGroup;
+			children = (
+				A15E85CA21719796000B4736 /* cell */,
+				A15E85C92171978E000B4736 /* 区尾 */,
+				A15E85C82171977F000B4736 /* 区头 */,
 				A1F4C47A217041C9009D0641 /* NMPersonalMinePageTitleView.h */,
 				A1F4C47B217041C9009D0641 /* NMPersonalMinePageTitleView.m */,
 				A1F4C480217067E4009D0641 /* NMContentTableView.h */,
 				A1F4C481217067E4009D0641 /* NMContentTableView.m */,
 			);
-			path = PageView;
+			path = "我的订单";
 			sourceTree = "<group>";
 		};
 		B9096C6521646B7E00EFC0F9 /* 搜索记录 */ = {
@@ -892,7 +959,8 @@
 		B9142E28215CD8F000762C63 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1F4C47921704015009D0641 /* PageView */,
+				A15E85D42171B80E000B4736 /* 订单详情 */,
+				A1F4C47921704015009D0641 /* 我的订单 */,
 				B9A599802166011D007B46BA /* 头部（我的） */,
 				B9A599542165B313007B46BA /* NMMineTableViewCell.h */,
 				B9A599552165B313007B46BA /* NMMineTableViewCell.m */,
@@ -907,6 +975,8 @@
 				B94A9B38215DD9A800A9C689 /* NMMineViewController.m */,
 				A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */,
 				A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */,
+				A15E85D52171B87C000B4736 /* NMOrderDetailsViewController.h */,
+				A15E85D62171B87C000B4736 /* NMOrderDetailsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1707,17 +1777,22 @@
 				B94A9B33215DD91E00A9C689 /* NMPublishViewController.m in Sources */,
 				B94A9B2F215DD8EC00A9C689 /* NMMallViewController.m in Sources */,
 				B9096C852164AA0600EFC0F9 /* NMGoodsWaterFlowCollectionViewCell.m in Sources */,
+				A15E85D72171B87C000B4736 /* NMOrderDetailsViewController.m in Sources */,
 				B9142DA7215CC3F400762C63 /* main.m in Sources */,
 				B925D6402160A0490086FA21 /* SPPageMenu.m in Sources */,
 				B9142DEF215CD35F00762C63 /* NMBaseNavigationController.m in Sources */,
+				A15E85DA2171BA50000B4736 /* NMOrderDetailsTableViewCell.m in Sources */,
 				B9A6A3C8216DAB22007563B5 /* NMMessageTableViewCell.m in Sources */,
 				B9142DDB215CCF6200762C63 /* NMAppDelegate+AppLifeCircle.m in Sources */,
+				A15E85D321719D3C000B4736 /* NMMineOrderTableViewCell.m in Sources */,
 				B910FA10216E16D900FAE864 /* NMHeaderHoverReusableView.m in Sources */,
+				A15E85CD21719807000B4736 /* NMMineOrderTabViewHeadView.m in Sources */,
 				B9599F1D21708BA000C53F47 /* NMConfirmOrderGoodsCell.m in Sources */,
 				B9A5997F216600FF007B46BA /* NMMineUserMsgView.m in Sources */,
 				B9096C76216497F300EFC0F9 /* NMGoodsListViewController.m in Sources */,
 				B94A9B39215DD9A800A9C689 /* NMMineViewController.m in Sources */,
 				B9096C73216497D200EFC0F9 /* NMNotesListViewController.m in Sources */,
+				A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */,
 				B925D633216062320086FA21 /* NMCustomizeNavBarView.m in Sources */,
 				B9EFB98221631191004881D9 /* NMMallRecommendViewController.m in Sources */,
 				B9096C822164A9F500EFC0F9 /* NMNotesWaterFlowCollectionViewCell.m in Sources */,
@@ -1752,6 +1827,7 @@
 				B94A9B36215DD95B00A9C689 /* NMAllianceViewController.m in Sources */,
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,
+				A15E85DE2171E023000B4736 /* NMOrderDetailsView.m in Sources */,
 				B9142DD5215CCE4200762C63 /* NMAppDelegate.m in Sources */,
 				B9096C6921646F1D00EFC0F9 /* NMSecondSearchViewController.m in Sources */,
 				B9A6A3C4216DA7DB007563B5 /* NMMessageViewController.m in Sources */,
