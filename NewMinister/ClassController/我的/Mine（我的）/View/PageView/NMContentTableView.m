@@ -17,14 +17,14 @@ static NSString *NNContentTableViewCellID = @"NNContentTableView";
 @implementation NMContentTableView
 
 - (instancetype)initWithFrame:(CGRect)frame {
+    
     self = [super initWithFrame:frame];
     if (self) {
         self.dataSource = self;
         self.delegate=self;
         self.tableHeaderView=[UIView new];
-        self.tableFooterView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, NMScreenWidth, 61)];
+        self.tableFooterView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, NMScreenWidth, 60)];
         self.showsVerticalScrollIndicator = NO;
-    
     }
     return self;
 }
@@ -73,7 +73,7 @@ static NSString *NNContentTableViewCellID = @"NNContentTableView";
     
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.frame = CGRectMake(15,24,14,13);
-    [UIImage imageNamed:@"店铺@2x.png"];
+    imageView.image=[UIImage imageNamed:@"car_ShopImg.png"];
     [view addSubview:imageView];
     
     NSString * leflabelstr =[NSString stringWithFormat:@"ROCK的私家小店"];
@@ -85,7 +85,6 @@ static NSString *NNContentTableViewCellID = @"NNContentTableView";
     leflabel.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
     [view addSubview:leflabel];
     
-    
     UILabel *riglabel = [[UILabel alloc] init];
     riglabel.frame = CGRectMake(0,25,NMScreenWidth-16,11.5);
     riglabel.text = @"等待买家付款";
@@ -93,6 +92,13 @@ static NSString *NNContentTableViewCellID = @"NNContentTableView";
     riglabel.font = [UIFont fontWithName:@"PingFang-SC-Medium" size:12];
     riglabel.textColor = [UIColor colorWithRed:241/255.0 green:2/255.0 blue:21/255.0 alpha:1];
     [view addSubview:riglabel];
+    
+    UIImageView *rigimageView = [[UIImageView alloc] init];
+    rigimageView.frame = CGRectMake(CGRectGetMaxX(leflabel.frame)+5,25,14,13);
+    rigimageView.image=[UIImage imageNamed:@"car_ArrowGray.png"];
+    [view addSubview:rigimageView];
+
+    
     
     return view;
     
