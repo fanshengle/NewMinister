@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NMOrderDetailsStateView : UIView
+- (instancetype)initWithFrame:(CGRect)frame imageView:(UIImage *)image stateString:(NSString *)stateString timeString:(NSString *)timeString;
 
 @end
 

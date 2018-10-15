@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NMOrderDetailsAddressView : UIView
+- (instancetype)initWithFrame:(CGRect)frame namelabel:(NSString *)nameStr phonelabel:(NSString *)phoneStr addresslabel:(NSString *)addressStr;
+
 
 @end
 
