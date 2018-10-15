@@ -12,6 +12,8 @@
 #import "NMMineHeaderView.h"
 #import "NMMineOrderViewController.h"
 #import "NMMineModel.h"
+#import "NMMineSetupViewController.h"
+
 @interface NMMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>{
     
     CGFloat _headerViewHeight;
@@ -105,16 +107,23 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:
-//            NMLog(@"点击了 我的钱包");
             break;
         case 1:
-//            NMLog(@"点击了 我的任务");
             break;
         case 2:
-//            NMLog(@"点击了 我的好友");
             break;
         case 3:
-//            NMLog(@"点击了 我的等级");
+            break;
+        case 4:
+            break;
+        case 5:
+            break;
+        case 6:
+        {
+            NMMineSetupViewController  * vc = [[NMMineSetupViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            
             break;
         default:
             break;
