@@ -22,6 +22,18 @@
     }];
 }
 
+#pragma mark -- 在视图左边画线
+- (void)drawLeftLineWithColor:(UIColor *)color{
+    
+    UIView *line = [[UIView alloc] init];
+    line.backgroundColor = color;
+    [self addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.bottom.equalTo(self);
+        make.width.equalTo(@(1.0));
+    }];
+}
+
 #pragma mark -- 在视图中间画线
 - (void)drawMiddleLineWithColor:(UIColor *)color{
     
@@ -35,6 +47,17 @@
     }];
 }
 
+#pragma mark -- 在视图右边画线
+- (void)drawRightLineWithColor:(UIColor *)color{
+    
+    UIView *line = [[UIView alloc] init];
+    line.backgroundColor = color;
+    [self addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.top.bottom.equalTo(self);
+        make.width.equalTo(@(1.0));
+    }];
+}
 #pragma mark -- 在视图底部画线
 - (void)drawBottomLineWithColor:(UIColor *)color{
     

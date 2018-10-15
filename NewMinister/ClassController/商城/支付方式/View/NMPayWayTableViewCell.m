@@ -23,6 +23,21 @@
     
     _model = model;
     
+    [self.payWayImgView setImage:[UIImage imageNamed:_model.titleIcon]];
+    [self.chooseBtn setImage:[UIImage imageNamed:_model.chooseNormalIcon] forState:UIControlStateNormal];
+    [self.chooseBtn setImage:[UIImage imageNamed:_model.chooseSelectIcon] forState:UIControlStateSelected];
+    self.payWayNameLab.text = _model.titleText;
+
+    //画线
+    UIView *line = [[UIView alloc] init];
+    line.backgroundColor = NMf1f1f1;
+    [self addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.payWayImgView.mas_left);
+        make.right.equalTo(self.chooseBtn.mas_right);
+        make.top.equalTo(self.mas_top);
+        make.height.equalTo(@(1.0));
+    }];
 }
 
 #pragma mark -- 店铺logo
@@ -66,6 +81,7 @@
     
     if (!_chooseBtn) {
         UIButton *chooseBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [chooseBtn addTarget:self action:@selector(choosePayAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:chooseBtn];
         _chooseBtn = chooseBtn;
         [chooseBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -76,7 +92,14 @@
     return _chooseBtn;
 }
 
-
+#pragma mark -- 选择支付方式
+- (void)choosePayAction:(UIButton *)button{
+    
+    if (self.payWayBlock) {
+        
+        self.payWayBlock(button);
+    }
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

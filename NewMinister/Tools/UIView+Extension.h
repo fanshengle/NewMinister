@@ -13,8 +13,14 @@
 #pragma mark -- 在视图顶部画线
 - (void)drawTopLineWithColor:(UIColor *)color;
 
+#pragma mark -- 在视图左边画线
+- (void)drawLeftLineWithColor:(UIColor *)color;
+
 #pragma mark -- 在视图中间画线
 - (void)drawMiddleLineWithColor:(UIColor *)color;
+
+#pragma mark -- 在视图右边画线
+- (void)drawRightLineWithColor:(UIColor *)color;
 
 #pragma mark -- 在视图底部画线
 - (void)drawBottomLineWithColor:(UIColor *)color;

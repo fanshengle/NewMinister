@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/ReuseCode(&#x5c01;&#x88c5;)/&#x9876;&#x90e8;&#x64cd;&#x4f5c;&#x89c6;&#x56fe;/NMTopOperationBarView.m"
-            timestampString = "561039982.3729039"
+            timestampString = "561281109.897084"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -202,12 +202,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x786e;&#x8ba4;&#x8ba2;&#x5355;/Controller/NMConfirmOrderViewController.m"
-            timestampString = "561111124.069096"
+            timestampString = "561267987.778832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "-bottomView"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x8d2d;&#x7269;&#x8f66;/Controller/NMShopCartViewController.m"
+            timestampString = "561299396.028818"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-tableView:viewForHeaderInSection:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x8d2d;&#x7269;&#x8f66;/View/NMShopCartSectionHeaderView.m"
+            timestampString = "561299396.028965"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-refreshIsHave:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewMinister/ClassController/&#x5546;&#x57ce;/&#x8d2d;&#x7269;&#x8f66;/View/NMShopCartSectionHeaderView.m"
+            timestampString = "561299396.029494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-secondView"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

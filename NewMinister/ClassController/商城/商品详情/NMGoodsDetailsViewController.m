@@ -10,6 +10,8 @@
 
 #import "NMConfirmOrderViewController.h"
 
+#import "NMShopCartViewController.h"
+
 @interface NMGoodsDetailsViewController ()
 
 @end
@@ -20,6 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    [self setNavTitle:@"商品详情" rightBarItem:@"购物车" isPicture:NO];
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 100, 100, 100);
     btn.backgroundColor = [UIColor redColor];
@@ -27,6 +32,14 @@
     [btn addTarget:self action:@selector(action) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+}
+
+- (void)rightBarItemClick{
+    
+    [super rightBarItemClick];
+    
+    NMShopCartViewController *vc = [[NMShopCartViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)action{
