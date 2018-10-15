@@ -10,6 +10,10 @@
 		0CBF4A04B39307EA24D1D5E9 /* libPods-NewMinisterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F09785A3FE981DC074BA4D /* libPods-NewMinisterTests.a */; };
 		666031ABDE040BFF5C34F654 /* libPods-NewMinisterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F70DB61826642846DC3C3 /* libPods-NewMinisterUITests.a */; };
 		89D43A001FC7B1148FAA3B64 /* libPods-NewMinister.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9953528E495B2FF945C571 /* libPods-NewMinister.a */; };
+		A155BC3721742AF700C923CC /* NMOrderDetailsStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC3621742AF700C923CC /* NMOrderDetailsStateView.m */; };
+		A155BC3A21742B2A00C923CC /* NMOrderDetailsAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC3921742B2A00C923CC /* NMOrderDetailsAddressView.m */; };
+		A155BC3F2174417300C923CC /* NMMineSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC3E2174417300C923CC /* NMMineSetupViewController.m */; };
+		A155BC42217465A600C923CC /* NMAddressSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC41217465A600C923CC /* NMAddressSetViewController.m */; };
 		A15E85CD21719807000B4736 /* NMMineOrderTabViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */; };
 		A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */; };
 		A15E85D321719D3C000B4736 /* NMMineOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */; };
@@ -213,6 +217,14 @@
 		4F9953528E495B2FF945C571 /* libPods-NewMinister.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewMinister.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E86AB004FD32C91AA6BD0E /* Pods-NewMinisterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinisterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinisterUITests/Pods-NewMinisterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89192F8D30CDD1B842DCED56 /* Pods-NewMinister.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewMinister.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewMinister/Pods-NewMinister.release.xcconfig"; sourceTree = "<group>"; };
+		A155BC3521742AF700C923CC /* NMOrderDetailsStateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMOrderDetailsStateView.h; sourceTree = "<group>"; };
+		A155BC3621742AF700C923CC /* NMOrderDetailsStateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOrderDetailsStateView.m; sourceTree = "<group>"; };
+		A155BC3821742B2A00C923CC /* NMOrderDetailsAddressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMOrderDetailsAddressView.h; sourceTree = "<group>"; };
+		A155BC3921742B2A00C923CC /* NMOrderDetailsAddressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOrderDetailsAddressView.m; sourceTree = "<group>"; };
+		A155BC3D2174417300C923CC /* NMMineSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineSetupViewController.h; sourceTree = "<group>"; };
+		A155BC3E2174417300C923CC /* NMMineSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineSetupViewController.m; sourceTree = "<group>"; };
+		A155BC40217465A600C923CC /* NMAddressSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAddressSetViewController.h; sourceTree = "<group>"; };
+		A155BC41217465A600C923CC /* NMAddressSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAddressSetViewController.m; sourceTree = "<group>"; };
 		A15E85CB21719807000B4736 /* NMMineOrderTabViewHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewHeadView.h; sourceTree = "<group>"; };
 		A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTabViewHeadView.m; sourceTree = "<group>"; };
 		A15E85CE21719B91000B4736 /* NMMineOrderTabViewFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewFooterView.h; sourceTree = "<group>"; };
@@ -530,6 +542,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A155BC3B217440A000C923CC /* 全部订单 */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */,
+				A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */,
+				A15E85D52171B87C000B4736 /* NMOrderDetailsViewController.h */,
+				A15E85D62171B87C000B4736 /* NMOrderDetailsViewController.m */,
+			);
+			path = "全部订单";
+			sourceTree = "<group>";
+		};
+		A155BC3C217440CF00C923CC /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				A155BC3D2174417300C923CC /* NMMineSetupViewController.h */,
+				A155BC3E2174417300C923CC /* NMMineSetupViewController.m */,
+				A155BC40217465A600C923CC /* NMAddressSetViewController.h */,
+				A155BC41217465A600C923CC /* NMAddressSetViewController.m */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
 		A15E85C82171977F000B4736 /* 区头 */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +606,10 @@
 			children = (
 				A15E85DC2171E023000B4736 /* NMOrderDetailsView.h */,
 				A15E85DD2171E023000B4736 /* NMOrderDetailsView.m */,
+				A155BC3521742AF700C923CC /* NMOrderDetailsStateView.h */,
+				A155BC3621742AF700C923CC /* NMOrderDetailsStateView.m */,
+				A155BC3821742B2A00C923CC /* NMOrderDetailsAddressView.h */,
+				A155BC3921742B2A00C923CC /* NMOrderDetailsAddressView.m */,
 			);
 			path = "订单信息";
 			sourceTree = "<group>";
@@ -1018,10 +1056,8 @@
 			children = (
 				B94A9B37215DD9A800A9C689 /* NMMineViewController.h */,
 				B94A9B38215DD9A800A9C689 /* NMMineViewController.m */,
-				A1F4C47621702D8E009D0641 /* NMMineOrderViewController.h */,
-				A1F4C47721702D8E009D0641 /* NMMineOrderViewController.m */,
-				A15E85D52171B87C000B4736 /* NMOrderDetailsViewController.h */,
-				A15E85D62171B87C000B4736 /* NMOrderDetailsViewController.m */,
+				A155BC3C217440CF00C923CC /* 设置 */,
+				A155BC3B217440A000C923CC /* 全部订单 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1896,6 +1932,7 @@
 				B9599F19217043CA00C53F47 /* NMConfirmOrderBottomView.m in Sources */,
 				B95F63FE216B2C0000650551 /* UIView+Extension.m in Sources */,
 				B9142E2D215CDB8400762C63 /* NMBaseDataManageAction.m in Sources */,
+				A155BC3721742AF700C923CC /* NMOrderDetailsStateView.m in Sources */,
 				B9E83628216F14F9003D2020 /* NMGoodsClassifyReusableView.m in Sources */,
 				B9A5997C216600AC007B46BA /* NMMineOrderListView.m in Sources */,
 				B94A9B33215DD91E00A9C689 /* NMPublishViewController.m in Sources */,
@@ -1939,6 +1976,7 @@
 				B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */,
 				B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */,
 				B9456A662171E7690029B392 /* NMPayWayModel.m in Sources */,
+				A155BC3A21742B2A00C923CC /* NMOrderDetailsAddressView.m in Sources */,
 				B9456A592171DC4B0029B392 /* NMPayWayViewController.m in Sources */,
 				B94A9B40215E043200A9C689 /* NMTabBar.m in Sources */,
 				B9599F0D2170432900C53F47 /* NMConfirmOrderHeaderView.m in Sources */,
@@ -1949,6 +1987,7 @@
 				B910FA14216E21DC00FAE864 /* NMShufflingCollectionViewCell.m in Sources */,
 				B9142DD8215CCF5300762C63 /* NMAppDelegate+AppService.m in Sources */,
 				B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */,
+				A155BC42217465A600C923CC /* NMAddressSetViewController.m in Sources */,
 				B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */,
 				B9599F422170BD0300C53F47 /* NMConfirmOrderTableView.m in Sources */,
 				B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */,
@@ -1961,6 +2000,7 @@
 				B9A6A3C4216DA7DB007563B5 /* NMMessageViewController.m in Sources */,
 				B9599F0621702F0100C53F47 /* NMConfirmOrderViewController.m in Sources */,
 				B9142DDE215CCF7100762C63 /* NMAppDelegate+RootController.m in Sources */,
+				A155BC3F2174417300C923CC /* NMMineSetupViewController.m in Sources */,
 				B925D6432160A6110086FA21 /* ToolObject.m in Sources */,
 				B9A5994F2165A633007B46BA /* NMBaseModel.m in Sources */,
 				B9EF85D8216C4EB70000AF10 /* NMPublishButton.m in Sources */,

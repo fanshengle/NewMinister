@@ -11,6 +11,9 @@
 #import "NMMineOrderTableViewCell.h"
 #import "NMMineOrderTabViewHeadView.h"
 #import "NMOrderDetailsView.h"
+#import "NMOrderDetailsStateView.h"
+#import "NMOrderDetailsAddressView.h"
+
 
 @interface NMOrderDetailsViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,6 +36,8 @@
     UIView * bgview =[[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.tableView.frame), NMScreenWidth, 49)];
     bgview.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:bgview];
+    
+    
     
     UIView *xview = [[UIView alloc] init];
     xview.frame = CGRectMake(0,0,NMScreenWidth,1);
@@ -70,6 +75,14 @@
         
         UIView * headView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, NMScreenWidth, 191)];
         headView.backgroundColor=[UIColor whiteColor];
+        
+        NMOrderDetailsStateView * detailsStateView =[[NMOrderDetailsStateView alloc]initWithFrame:CGRectMake(0, 0, NMScreenWidth, 95) imageView:[UIImage imageNamed:@""] stateString:@"等待买家付款" timeString:@"剩21小时28分自动关闭"];
+        [headView addSubview:detailsStateView];
+        
+        NMOrderDetailsAddressView *detailsAddressView=[[NMOrderDetailsAddressView alloc]initWithFrame:CGRectMake(0, 96, NMScreenWidth, 96) namelabel:@"张学友" phonelabel:@"18692620111" addresslabel:@"湖南省长沙市芙蓉区五里牌街道芙蓉区，长岛路天府华天北栋XX号"];
+        [headView addSubview:detailsAddressView];
+
+        
 
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, NMNavbarHeight, NMScreenWidth, NMScreenHeight-NMNavbarHeight-49) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
