@@ -31,6 +31,8 @@
 #define NMf10315 [UIColor colorWithHexString:@"f10315"]
 #define NMf10215 [UIColor colorWithHexString:@"f10215"]
 #define NMe46362 [UIColor colorWithHexString:@"e46362"]
+#define NMFF5349 [UIColor colorWithHexString:@"FF5349"]
+
 
 #define NM999999 [UIColor colorWithHexString:@"999999"]
 #define NMf1f1f1 [UIColor colorWithHexString:@"f1f1f1"]
@@ -39,5 +41,7 @@
 #define NMf5f5f5 [UIColor colorWithHexString:@"f5f5f5"]
 #define NMfa6a45 [UIColor colorWithHexString:@"fa6a45"]
 #define NM666666 [UIColor colorWithHexString:@"666666"]
+#define NM3692cd [UIColor colorWithHexString:@"3692cd"]
+#define NMfbf9f7 [UIColor colorWithHexString:@"fbf9f7"]
 
 #endif /* ColorHex_h */

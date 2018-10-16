@@ -60,6 +60,7 @@
 #define NM88 88.
 
 #define NM110 110.
+#define NM122 122.
 #define NM180 180.
 
 #define SPCornerRadius 5.0f                                         //通用半径

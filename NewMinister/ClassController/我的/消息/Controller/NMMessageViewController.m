@@ -93,6 +93,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     NMMessageTableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([NMMessageTableViewCell class]) forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (self.sectionListArr.count > indexPath.section) {
         NSArray *listArr = self.sectionListArr[indexPath.section];
         if (listArr.count > indexPath.row) {

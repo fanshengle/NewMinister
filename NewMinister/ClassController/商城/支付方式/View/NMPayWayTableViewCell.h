@@ -10,8 +10,9 @@
 
 #import "NMPayWayModel.h"
 
+typedef void (^ChoosePayWayBlock)(UIButton *btn);
 @interface NMPayWayTableViewCell : UITableViewCell
 
 @property (nonatomic,strong) NMPayWayModel *model;
-
+@property (nonatomic,copy) ChoosePayWayBlock payWayBlock;
 @end
