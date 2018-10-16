@@ -19,6 +19,7 @@ target 'NewMinister' do
 	pod 'YYKit'
 	pod 'SDCycleScrollView'
 	pod 'AFNetworking'
+	pod 'FMDB'
 
 
 

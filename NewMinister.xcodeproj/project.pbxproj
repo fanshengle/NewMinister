@@ -14,6 +14,15 @@
 		A155BC3A21742B2A00C923CC /* NMOrderDetailsAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC3921742B2A00C923CC /* NMOrderDetailsAddressView.m */; };
 		A155BC3F2174417300C923CC /* NMMineSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC3E2174417300C923CC /* NMMineSetupViewController.m */; };
 		A155BC42217465A600C923CC /* NMAddressSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC41217465A600C923CC /* NMAddressSetViewController.m */; };
+		A155BC4521747FA200C923CC /* NMAddressSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC4421747FA200C923CC /* NMAddressSetTableViewCell.m */; };
+		A155BC48217493A600C923CC /* NMNewAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC47217493A600C923CC /* NMNewAddressViewController.m */; };
+		A155BC5B2174B83000C923CC /* NMAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A155BC5A2174B83000C923CC /* NMAddressModel.m */; };
+		A15CD17421757C71001221A5 /* NMStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17321757C71001221A5 /* NMStudent.m */; };
+		A15CD17721757CAA001221A5 /* NMStudentFMDNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17621757CAA001221A5 /* NMStudentFMDNManager.m */; };
+		A15CD17F21759308001221A5 /* DQCanCerEnsureView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17A21759307001221A5 /* DQCanCerEnsureView.m */; };
+		A15CD18021759308001221A5 /* DQAreasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17B21759307001221A5 /* DQAreasView.m */; };
+		A15CD18121759308001221A5 /* DQAreasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17C21759307001221A5 /* DQAreasModel.m */; };
+		A15CD18221759308001221A5 /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = A15CD17D21759307001221A5 /* areas.json */; };
 		A15E85CD21719807000B4736 /* NMMineOrderTabViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */; };
 		A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */; };
 		A15E85D321719D3C000B4736 /* NMMineOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */; };
@@ -225,6 +234,23 @@
 		A155BC3E2174417300C923CC /* NMMineSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineSetupViewController.m; sourceTree = "<group>"; };
 		A155BC40217465A600C923CC /* NMAddressSetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAddressSetViewController.h; sourceTree = "<group>"; };
 		A155BC41217465A600C923CC /* NMAddressSetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAddressSetViewController.m; sourceTree = "<group>"; };
+		A155BC4321747FA200C923CC /* NMAddressSetTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAddressSetTableViewCell.h; sourceTree = "<group>"; };
+		A155BC4421747FA200C923CC /* NMAddressSetTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAddressSetTableViewCell.m; sourceTree = "<group>"; };
+		A155BC46217493A600C923CC /* NMNewAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMNewAddressViewController.h; sourceTree = "<group>"; };
+		A155BC47217493A600C923CC /* NMNewAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMNewAddressViewController.m; sourceTree = "<group>"; };
+		A155BC592174B83000C923CC /* NMAddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMAddressModel.h; sourceTree = "<group>"; };
+		A155BC5A2174B83000C923CC /* NMAddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMAddressModel.m; sourceTree = "<group>"; };
+		A15CD17221757C71001221A5 /* NMStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMStudent.h; sourceTree = "<group>"; };
+		A15CD17321757C71001221A5 /* NMStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMStudent.m; sourceTree = "<group>"; };
+		A15CD17521757CAA001221A5 /* NMStudentFMDNManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMStudentFMDNManager.h; sourceTree = "<group>"; };
+		A15CD17621757CAA001221A5 /* NMStudentFMDNManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMStudentFMDNManager.m; sourceTree = "<group>"; };
+		A15CD17821759306001221A5 /* DQCanCerEnsureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQCanCerEnsureView.h; sourceTree = "<group>"; };
+		A15CD17921759307001221A5 /* DQAreasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAreasView.h; sourceTree = "<group>"; };
+		A15CD17A21759307001221A5 /* DQCanCerEnsureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQCanCerEnsureView.m; sourceTree = "<group>"; };
+		A15CD17B21759307001221A5 /* DQAreasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAreasView.m; sourceTree = "<group>"; };
+		A15CD17C21759307001221A5 /* DQAreasModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAreasModel.m; sourceTree = "<group>"; };
+		A15CD17D21759307001221A5 /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
+		A15CD17E21759308001221A5 /* DQAreasModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAreasModel.h; sourceTree = "<group>"; };
 		A15E85CB21719807000B4736 /* NMMineOrderTabViewHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewHeadView.h; sourceTree = "<group>"; };
 		A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTabViewHeadView.m; sourceTree = "<group>"; };
 		A15E85CE21719B91000B4736 /* NMMineOrderTabViewFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewFooterView.h; sourceTree = "<group>"; };
@@ -560,8 +586,24 @@
 				A155BC3E2174417300C923CC /* NMMineSetupViewController.m */,
 				A155BC40217465A600C923CC /* NMAddressSetViewController.h */,
 				A155BC41217465A600C923CC /* NMAddressSetViewController.m */,
+				A155BC46217493A600C923CC /* NMNewAddressViewController.h */,
+				A155BC47217493A600C923CC /* NMNewAddressViewController.m */,
 			);
 			path = "设置";
+			sourceTree = "<group>";
+		};
+		A155BC492174A43D00C923CC /* 地区选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				A15CD17D21759307001221A5 /* areas.json */,
+				A15CD17E21759308001221A5 /* DQAreasModel.h */,
+				A15CD17C21759307001221A5 /* DQAreasModel.m */,
+				A15CD17921759307001221A5 /* DQAreasView.h */,
+				A15CD17B21759307001221A5 /* DQAreasView.m */,
+				A15CD17821759306001221A5 /* DQCanCerEnsureView.h */,
+				A15CD17A21759307001221A5 /* DQCanCerEnsureView.m */,
+			);
+			path = "地区选择器";
 			sourceTree = "<group>";
 		};
 		A15E85C82171977F000B4736 /* 区头 */ = {
@@ -1035,6 +1077,12 @@
 			children = (
 				B9A599502165A65E007B46BA /* NMMineModel.h */,
 				B9A599512165A65E007B46BA /* NMMineModel.m */,
+				A155BC592174B83000C923CC /* NMAddressModel.h */,
+				A155BC5A2174B83000C923CC /* NMAddressModel.m */,
+				A15CD17221757C71001221A5 /* NMStudent.h */,
+				A15CD17321757C71001221A5 /* NMStudent.m */,
+				A15CD17521757CAA001221A5 /* NMStudentFMDNManager.h */,
+				A15CD17621757CAA001221A5 /* NMStudentFMDNManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1047,6 +1095,8 @@
 				B9A599802166011D007B46BA /* 头部（我的） */,
 				B9A599542165B313007B46BA /* NMMineTableViewCell.h */,
 				B9A599552165B313007B46BA /* NMMineTableViewCell.m */,
+				A155BC4321747FA200C923CC /* NMAddressSetTableViewCell.h */,
+				A155BC4421747FA200C923CC /* NMAddressSetTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1072,6 +1122,7 @@
 		B925D63021605A890086FA21 /* ReuseCode(封装) */ = {
 			isa = PBXGroup;
 			children = (
+				A155BC492174A43D00C923CC /* 地区选择器 */,
 				B910FA11216E16ED00FAE864 /* 头部悬停（collection） */,
 				B9096C7B2164A01E00EFC0F9 /* 瀑布流 */,
 				B925D63D2160A00B0086FA21 /* 分页菜单视图 */,
@@ -1756,6 +1807,7 @@
 				B94A9B56215E05A700A9C689 /* tabItem1Normal@2x.png in Resources */,
 				B9599F3B217098FB00C53F47 /* car_ArrowRed@3x.png in Resources */,
 				B95F6403216B502300650551 /* myWaitSend@3x.png in Resources */,
+				A15CD18221759308001221A5 /* areas.json in Resources */,
 				B94A9B57215E05A700A9C689 /* tabItem3Normal@3x.png in Resources */,
 				B9A599722165C2AE007B46BA /* mySetUp@3x.png in Resources */,
 				B9096C61216461A000EFC0F9 /* search_empty@3x.png in Resources */,
@@ -1936,6 +1988,7 @@
 				B9E83628216F14F9003D2020 /* NMGoodsClassifyReusableView.m in Sources */,
 				B9A5997C216600AC007B46BA /* NMMineOrderListView.m in Sources */,
 				B94A9B33215DD91E00A9C689 /* NMPublishViewController.m in Sources */,
+				A15CD17421757C71001221A5 /* NMStudent.m in Sources */,
 				B94A9B2F215DD8EC00A9C689 /* NMMallViewController.m in Sources */,
 				B9096C852164AA0600EFC0F9 /* NMGoodsWaterFlowCollectionViewCell.m in Sources */,
 				A15E85D72171B87C000B4736 /* NMOrderDetailsViewController.m in Sources */,
@@ -1952,6 +2005,7 @@
 				B9A5997F216600FF007B46BA /* NMMineUserMsgView.m in Sources */,
 				B9096C76216497F300EFC0F9 /* NMGoodsListViewController.m in Sources */,
 				B94A9B39215DD9A800A9C689 /* NMMineViewController.m in Sources */,
+				A15CD17F21759308001221A5 /* DQCanCerEnsureView.m in Sources */,
 				B9096C73216497D200EFC0F9 /* NMNotesListViewController.m in Sources */,
 				A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */,
 				B925D633216062320086FA21 /* NMCustomizeNavBarView.m in Sources */,
@@ -1967,6 +2021,7 @@
 				B9456A622171E3CC0029B392 /* NMPayWayTableViewCell.m in Sources */,
 				B9096C642164692B00EFC0F9 /* NMSearchListTableViewCell.m in Sources */,
 				A1F4C482217067E4009D0641 /* NMContentTableView.m in Sources */,
+				A15CD17721757CAA001221A5 /* NMStudentFMDNManager.m in Sources */,
 				B9599F16217043AD00C53F47 /* NMConfirmOrderFooterView.m in Sources */,
 				B9A5994C2165A433007B46BA /* NMMineHeaderView.m in Sources */,
 				B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */,
@@ -1975,6 +2030,7 @@
 				B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */,
 				B9096C5B2164601400EFC0F9 /* SearchCollectionCell.m in Sources */,
 				B9599F0021702E1100C53F47 /* NMGoodsDetailsViewController.m in Sources */,
+				A155BC48217493A600C923CC /* NMNewAddressViewController.m in Sources */,
 				B9456A662171E7690029B392 /* NMPayWayModel.m in Sources */,
 				A155BC3A21742B2A00C923CC /* NMOrderDetailsAddressView.m in Sources */,
 				B9456A592171DC4B0029B392 /* NMPayWayViewController.m in Sources */,
@@ -1989,12 +2045,14 @@
 				B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */,
 				A155BC42217465A600C923CC /* NMAddressSetViewController.m in Sources */,
 				B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */,
+				A155BC4521747FA200C923CC /* NMAddressSetTableViewCell.m in Sources */,
 				B9599F422170BD0300C53F47 /* NMConfirmOrderTableView.m in Sources */,
 				B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */,
 				B94A9B36215DD95B00A9C689 /* NMAllianceViewController.m in Sources */,
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,
 				A15E85DE2171E023000B4736 /* NMOrderDetailsView.m in Sources */,
+				A15CD18021759308001221A5 /* DQAreasView.m in Sources */,
 				B9142DD5215CCE4200762C63 /* NMAppDelegate.m in Sources */,
 				B9096C6921646F1D00EFC0F9 /* NMSecondSearchViewController.m in Sources */,
 				B9A6A3C4216DA7DB007563B5 /* NMMessageViewController.m in Sources */,
@@ -2002,8 +2060,10 @@
 				B9142DDE215CCF7100762C63 /* NMAppDelegate+RootController.m in Sources */,
 				A155BC3F2174417300C923CC /* NMMineSetupViewController.m in Sources */,
 				B925D6432160A6110086FA21 /* ToolObject.m in Sources */,
+				A155BC5B2174B83000C923CC /* NMAddressModel.m in Sources */,
 				B9A5994F2165A633007B46BA /* NMBaseModel.m in Sources */,
 				B9EF85D8216C4EB70000AF10 /* NMPublishButton.m in Sources */,
+				A15CD18121759308001221A5 /* DQAreasModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

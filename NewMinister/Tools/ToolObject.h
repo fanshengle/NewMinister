@@ -45,5 +45,7 @@
 //获取当前时间
 + (NSString*)getCurrentTime;
 
+//字符串空值判断
++(BOOL)isNull:(id)object;
 
 @end
