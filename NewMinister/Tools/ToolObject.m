@@ -51,6 +51,21 @@
     CGSize textSize = CGSizeMake(textWidth, textHeight);
     return textSize;
 }
++(BOOL)isNull:(id)object
+{
+    // 判断是否为空串
+    if ([object isEqual:[NSNull null]]) {
+        return NO;
+    }
+    else if ([object isKindOfClass:[NSNull class]])
+    {
+        return NO;
+    }
+    else if (object==nil){
+        return NO;
+    }
+    return YES;
+}
 
 //得到文本宽度和高度，size
 + (CGSize)rerurnSizeOfText:(NSString *)textStr font:(UIFont *)font{

@@ -8,8 +8,10 @@
 
 #import "NMMineSetupViewController.h"
 #import "NMAddressSetViewController.h"
+#import "NMPersonalDataViewController.h"
 
-@interface NMMineSetupViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NMMineSetupViewController ()
+<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 
 @end
@@ -105,8 +107,16 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    NMAddressSetViewController * VC =[[NMAddressSetViewController alloc]init];
-    [self.navigationController pushViewController:VC animated:YES];
+    if (indexPath.section==0 && indexPath.row ==0) {
+        NMPersonalDataViewController * VC =[[NMPersonalDataViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    if (indexPath.section==0 && indexPath.row ==1) {
+        NMAddressSetViewController * VC =[[NMAddressSetViewController alloc]init];
+        [self.navigationController pushViewController:VC animated:YES];
+    }
+    
+
     
 }
 

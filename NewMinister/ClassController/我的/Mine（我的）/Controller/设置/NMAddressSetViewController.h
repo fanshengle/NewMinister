@@ -7,10 +7,13 @@
 //
 
 #import "NMBaseViewController.h"
+#import "NMStudent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NMAddressSetViewController : NMBaseViewController
+
+@property (nonatomic, strong) NSMutableArray <NMStudent *> *dataArr;
 
 @end
 
