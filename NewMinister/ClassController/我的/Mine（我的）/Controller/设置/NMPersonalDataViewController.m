@@ -1,31 +1,30 @@
 //
-//  NMMineSetupViewController.m
+//  NMPersonalDataViewController.m
 //  NewMinister
 //
-//  Created by Andy on 2018/10/15.
+//  Created by Andy on 2018/10/16.
 //  Copyright © 2018年 范声乐. All rights reserved.
 //
 
-#import "NMMineSetupViewController.h"
-#import "NMAddressSetViewController.h"
 #import "NMPersonalDataViewController.h"
 
-@interface NMMineSetupViewController ()
+@interface NMPersonalDataViewController ()
 <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
 
 @end
 
-@implementation NMMineSetupViewController
+@implementation NMPersonalDataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setDefaultNavTitle:@"账号设置"];
+    [self setDefaultNavTitle:@"个人资料"];
     self.navBarView.navBackgroundColor=[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
     [self tableView];
     [self.view addSubview:self.tableView];
     [self setBut];
+
 }
 #pragma mark -- 创建tableView
 - (UITableView *)tableView{
@@ -81,7 +80,7 @@
 //返回每一行的cell
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 2) {
+    if (section == 0) {
         return 2;
     }else{
         return 3;
@@ -90,7 +89,7 @@
 //返回分区数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 2;
 }
 //cell高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,16 +106,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    if (indexPath.section==0 && indexPath.row ==0) {
-        NMPersonalDataViewController * VC =[[NMPersonalDataViewController alloc]init];
-        [self.navigationController pushViewController:VC animated:YES];
-    }
-    if (indexPath.section==0 && indexPath.row ==1) {
-        NMAddressSetViewController * VC =[[NMAddressSetViewController alloc]init];
-        [self.navigationController pushViewController:VC animated:YES];
-    }
-    
-
     
 }
 
@@ -131,17 +120,12 @@
     }
     if (indexPath.section == 0) {
         
-        NSArray * array =[NSArray arrayWithObjects:@"个人资料",@"地址管理",@"账户安全", nil];
+        NSArray * array =[NSArray arrayWithObjects:@"我的头像",@"会员昵称", nil];
         cell.textLabel.text = [NSString stringWithFormat:@"%@", [array objectAtIndex:indexPath.row]];
-
+        
     }
     if (indexPath.section == 1) {
-        NSArray * array =[NSArray arrayWithObjects:@"银行卡包",@"关于我们",@"意见反馈", nil];
-        cell.textLabel.text = [NSString stringWithFormat:@"%@", [array objectAtIndex:indexPath.row]];
-
-    }
-    if (indexPath.section == 2) {
-        NSArray * array =[NSArray arrayWithObjects:@"消息提醒",@"清楚缓存", nil];
+        NSArray * array =[NSArray arrayWithObjects:@"出生日期",@"性别",@"常住地址", nil];
         cell.textLabel.text = [NSString stringWithFormat:@"%@", [array objectAtIndex:indexPath.row]];
     }
     if (indexPath.row==0 || indexPath.row ==1) {
@@ -151,14 +135,13 @@
         view.backgroundColor = [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1];
         [cell.contentView addSubview:view];
     }
-    if (indexPath.section == 0 || indexPath.section == 1) {
-        
-        cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
 
-    }
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+        
     cell.textLabel.font=[UIFont systemFontOfSize:14];
     cell.textLabel.textColor=[UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
     return cell;
 }
+
 
 @end

@@ -13,6 +13,7 @@
 #import "ToolObject.h"
 #import "DQAreasView.h"
 #import "DQAreasModel.h"
+#import "NMPersonalDataViewController.h"
 
 @interface NMNewAddressViewController ()
 <DQAreasViewDelegate,UITextFieldDelegate>

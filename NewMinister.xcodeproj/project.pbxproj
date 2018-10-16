@@ -23,6 +23,12 @@
 		A15CD18021759308001221A5 /* DQAreasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17B21759307001221A5 /* DQAreasView.m */; };
 		A15CD18121759308001221A5 /* DQAreasModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD17C21759307001221A5 /* DQAreasModel.m */; };
 		A15CD18221759308001221A5 /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = A15CD17D21759307001221A5 /* areas.json */; };
+		A15CD1862175CF83001221A5 /* detele@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15CD1842175CF83001221A5 /* detele@2x.png */; };
+		A15CD1872175CF83001221A5 /* detele@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15CD1852175CF83001221A5 /* detele@3x.png */; };
+		A15CD18A2175CFAE001221A5 /* bianji@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15CD1882175CFAE001221A5 /* bianji@3x.png */; };
+		A15CD18B2175CFAE001221A5 /* bianji@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A15CD1892175CFAE001221A5 /* bianji@2x.png */; };
+		A15CD18E2175DB15001221A5 /* NMPersonalDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD18D2175DB15001221A5 /* NMPersonalDataViewController.m */; };
+		A15CD1912175F56D001221A5 /* NMUserSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15CD1902175F56D001221A5 /* NMUserSecurityViewController.m */; };
 		A15E85CD21719807000B4736 /* NMMineOrderTabViewHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */; };
 		A15E85D021719B91000B4736 /* NMMineOrderTabViewFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85CF21719B91000B4736 /* NMMineOrderTabViewFooterView.m */; };
 		A15E85D321719D3C000B4736 /* NMMineOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15E85D221719D3C000B4736 /* NMMineOrderTableViewCell.m */; };
@@ -274,6 +280,14 @@
 		A15CD17C21759307001221A5 /* DQAreasModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQAreasModel.m; sourceTree = "<group>"; };
 		A15CD17D21759307001221A5 /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
 		A15CD17E21759308001221A5 /* DQAreasModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQAreasModel.h; sourceTree = "<group>"; };
+		A15CD1842175CF83001221A5 /* detele@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detele@2x.png"; sourceTree = "<group>"; };
+		A15CD1852175CF83001221A5 /* detele@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detele@3x.png"; sourceTree = "<group>"; };
+		A15CD1882175CFAE001221A5 /* bianji@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@3x.png"; sourceTree = "<group>"; };
+		A15CD1892175CFAE001221A5 /* bianji@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bianji@2x.png"; sourceTree = "<group>"; };
+		A15CD18C2175DB15001221A5 /* NMPersonalDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPersonalDataViewController.h; sourceTree = "<group>"; };
+		A15CD18D2175DB15001221A5 /* NMPersonalDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPersonalDataViewController.m; sourceTree = "<group>"; };
+		A15CD18F2175F56D001221A5 /* NMUserSecurityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMUserSecurityViewController.h; sourceTree = "<group>"; };
+		A15CD1902175F56D001221A5 /* NMUserSecurityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMUserSecurityViewController.m; sourceTree = "<group>"; };
 		A15E85CB21719807000B4736 /* NMMineOrderTabViewHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewHeadView.h; sourceTree = "<group>"; };
 		A15E85CC21719807000B4736 /* NMMineOrderTabViewHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMMineOrderTabViewHeadView.m; sourceTree = "<group>"; };
 		A15E85CE21719B91000B4736 /* NMMineOrderTabViewFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMMineOrderTabViewFooterView.h; sourceTree = "<group>"; };
@@ -644,6 +658,10 @@
 				A155BC41217465A600C923CC /* NMAddressSetViewController.m */,
 				A155BC46217493A600C923CC /* NMNewAddressViewController.h */,
 				A155BC47217493A600C923CC /* NMNewAddressViewController.m */,
+				A15CD18C2175DB15001221A5 /* NMPersonalDataViewController.h */,
+				A15CD18D2175DB15001221A5 /* NMPersonalDataViewController.m */,
+				A15CD18F2175F56D001221A5 /* NMUserSecurityViewController.h */,
+				A15CD1902175F56D001221A5 /* NMUserSecurityViewController.m */,
 			);
 			path = "设置";
 			sourceTree = "<group>";
@@ -660,6 +678,17 @@
 				A15CD17A21759307001221A5 /* DQCanCerEnsureView.m */,
 			);
 			path = "地区选择器";
+			sourceTree = "<group>";
+		};
+		A15CD1832175CF70001221A5 /* 我的设置 */ = {
+			isa = PBXGroup;
+			children = (
+				A15CD1892175CFAE001221A5 /* bianji@2x.png */,
+				A15CD1882175CFAE001221A5 /* bianji@3x.png */,
+				A15CD1842175CF83001221A5 /* detele@2x.png */,
+				A15CD1852175CF83001221A5 /* detele@3x.png */,
+			);
+			path = "我的设置";
 			sourceTree = "<group>";
 		};
 		A15E85C82171977F000B4736 /* 区头 */ = {
@@ -1403,6 +1432,7 @@
 		B94A9B3C215E03DE00A9C689 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				A15CD1832175CF70001221A5 /* 我的设置 */,
 				B9161710217487EC003D98D1 /* 默认加载图片 */,
 				B925D6472160B12C0086FA21 /* Mail(商城) */,
 				B9599F23217098CB00C53F47 /* 购物车 */,
@@ -1929,6 +1959,8 @@
 				B9A6A3D7216DC661007563B5 /* huozan_shoucang@3x.png in Resources */,
 				B94A9B5B215E05A700A9C689 /* tabItem4Normal@3x.png in Resources */,
 				B9A5995C2165C229007B46BA /* myNotes@2x.png in Resources */,
+				A15CD1872175CF83001221A5 /* detele@3x.png in Resources */,
+				A15CD18A2175CFAE001221A5 /* bianji@3x.png in Resources */,
 				B9456A732171E83A0029B392 /* car_qqWalletPay@2x.png in Resources */,
 				B9A5998421660C23007B46BA /* myUserLogo_Not@3x.png in Resources */,
 				B94A9B65215E062D00A9C689 /* tabItem5Normal@3x.png in Resources */,
@@ -1944,6 +1976,7 @@
 				B94A9B57215E05A700A9C689 /* tabItem3Normal@3x.png in Resources */,
 				B9A599722165C2AE007B46BA /* mySetUp@3x.png in Resources */,
 				B9096C61216461A000EFC0F9 /* search_empty@3x.png in Resources */,
+				A15CD18B2175CFAE001221A5 /* bianji@2x.png in Resources */,
 				B9456A712171E83A0029B392 /* car_zhiFuBaoPay@2x.png in Resources */,
 				B9599F33217098FB00C53F47 /* car_DropDown@3x.png in Resources */,
 				B916171D21748A04003D98D1 /* default_Good@3x.png in Resources */,
@@ -1969,6 +2002,7 @@
 				B9599F1E21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib in Resources */,
 				B9FC260D21719C6F00749FD2 /* car_BuyNow@3x.png in Resources */,
 				B95F6412216B504500650551 /* myAfterSales@2x.png in Resources */,
+				A15CD1862175CF83001221A5 /* detele@2x.png in Resources */,
 				B9599F34217098FB00C53F47 /* car_chooseNormal@3x.png in Resources */,
 				B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */,
 				B925D6532160B2090086FA21 /* allDelete@2x.png in Resources */,
@@ -2196,11 +2230,13 @@
 				B94A9B29215DD89E00A9C689 /* NMHomePageViewController.m in Sources */,
 				A155BC42217465A600C923CC /* NMAddressSetViewController.m in Sources */,
 				B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */,
+				A15CD1912175F56D001221A5 /* NMUserSecurityViewController.m in Sources */,
 				A155BC4521747FA200C923CC /* NMAddressSetTableViewCell.m in Sources */,
 				B9599F422170BD0300C53F47 /* NMConfirmOrderTableView.m in Sources */,
 				B9E83622216F14A6003D2020 /* NMGoodsClassifyTableViewCell.m in Sources */,
 				B94A9B36215DD95B00A9C689 /* NMAllianceViewController.m in Sources */,
 				B9A6A3E1216DC68A007563B5 /* NMMessageModel.m in Sources */,
+				A15CD18E2175DB15001221A5 /* NMPersonalDataViewController.m in Sources */,
 				B9096C792164981500EFC0F9 /* NMUsersListViewController.m in Sources */,
 				A15E85DE2171E023000B4736 /* NMOrderDetailsView.m in Sources */,
 				A15CD18021759308001221A5 /* DQAreasView.m in Sources */,
