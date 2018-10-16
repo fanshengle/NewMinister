@@ -60,7 +60,7 @@
 - (NMTopOperationBarView *)topSearchView{
     if (!_topSearchView) {
 
-        NMTopOperationBarView *topSearchView = [[NMTopOperationBarView alloc] initTopSearchViewWithFrame:CGRectMake(0, 0, NMScreenWidth, _topViewHeight) rightTitle:nil rightImgStr:@"mail_Msg"];
+        NMTopOperationBarView *topSearchView = [[NMTopOperationBarView alloc] initTopSearchViewWithFrame:CGRectMake(0, 0, NMScreenWidth, _topViewHeight) rightTitle:nil rightImgStr:@"mall_Msg"];
         [topSearchView.rightBtn addTarget:self action:@selector(lookMsgAction:) forControlEvents:UIControlEventTouchUpInside];
         topSearchView.searchTextField.delegate = self;
         [self.view addSubview:topSearchView];

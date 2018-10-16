@@ -105,7 +105,7 @@
     CGFloat width = 14;
     _leftImgView = [[UIImageView alloc] init];
     _leftImgView.contentMode = UIViewContentModeCenter;
-    _leftImgView.image = [UIImage imageNamed:@"mail_SearchIconGray"];
+    _leftImgView.image = [UIImage imageNamed:@"mall_SearchIconGray"];
     [_searchView addSubview:_leftImgView];
     [_leftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self.searchView);
@@ -117,7 +117,7 @@
     _allDeleteTextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     //删除搜索框的全部内容
     _allDeleteTextBtn.hidden = YES;
-    [_allDeleteTextBtn setImage:[UIImage imageNamed:@"allDelete"] forState:UIControlStateNormal];
+    [_allDeleteTextBtn setImage:[UIImage imageNamed:@"mall_allDelete"] forState:UIControlStateNormal];
     //[_allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
     [_searchView addSubview:_allDeleteTextBtn];
     [_allDeleteTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -196,7 +196,7 @@
         CGFloat width = 14;
         _leftImgView = [[UIImageView alloc] init];
         _leftImgView.contentMode = UIViewContentModeCenter;
-        _leftImgView.image = [UIImage imageNamed:@"mail_SearchIconGray"];
+        _leftImgView.image = [UIImage imageNamed:@"mall_SearchIconGray"];
         [_searchView addSubview:_leftImgView];
         [_leftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.equalTo(self.searchView);
@@ -208,7 +208,7 @@
         _allDeleteTextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         //删除搜索框的全部内容
         _allDeleteTextBtn.hidden = YES;
-        [_allDeleteTextBtn setImage:[UIImage imageNamed:@"allDelete"] forState:UIControlStateNormal];
+        [_allDeleteTextBtn setImage:[UIImage imageNamed:@"mall_allDelete"] forState:UIControlStateNormal];
         //[_allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
         [_searchView addSubview:_allDeleteTextBtn];
         [_allDeleteTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -302,7 +302,7 @@
         CGFloat width = 14;
         _leftImgView = [[UIImageView alloc] init];
         _leftImgView.contentMode = UIViewContentModeCenter;
-        _leftImgView.image = [UIImage imageNamed:@"mail_SearchIconGray"];
+        _leftImgView.image = [UIImage imageNamed:@"mall_SearchIconGray"];
         [_searchView addSubview:_leftImgView];
         [_leftImgView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.equalTo(self.searchView);
@@ -314,7 +314,7 @@
         _allDeleteTextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         //删除搜索框的全部内容
         _allDeleteTextBtn.hidden = YES;
-        [_allDeleteTextBtn setImage:[UIImage imageNamed:@"allDelete"] forState:UIControlStateNormal];
+        [_allDeleteTextBtn setImage:[UIImage imageNamed:@"mall_allDelete"] forState:UIControlStateNormal];
         //[_allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
         [_searchView addSubview:_allDeleteTextBtn];
         [_allDeleteTextBtn mas_makeConstraints:^(MASConstraintMaker *make) {

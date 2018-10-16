@@ -80,13 +80,27 @@
 		B925D6402160A0490086FA21 /* SPPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D63F2160A0490086FA21 /* SPPageMenu.m */; };
 		B925D6432160A6110086FA21 /* ToolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D6422160A6110086FA21 /* ToolObject.m */; };
 		B925D6462160A79D0086FA21 /* NMTopOperationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B925D6452160A79D0086FA21 /* NMTopOperationBarView.m */; };
-		B925D64C2160B1790086FA21 /* mail_Msg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6482160B1780086FA21 /* mail_Msg@3x.png */; };
-		B925D64D2160B1790086FA21 /* mail_SearchIconGray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6492160B1790086FA21 /* mail_SearchIconGray@3x.png */; };
-		B925D64E2160B1790086FA21 /* mail_Msg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D64A2160B1790086FA21 /* mail_Msg@2x.png */; };
-		B925D64F2160B1790086FA21 /* mail_SearchIconGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D64B2160B1790086FA21 /* mail_SearchIconGray@2x.png */; };
-		B925D6522160B2090086FA21 /* allDelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6502160B2080086FA21 /* allDelete@3x.png */; };
-		B925D6532160B2090086FA21 /* allDelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6512160B2090086FA21 /* allDelete@2x.png */; };
+		B925D64C2160B1790086FA21 /* mall_Msg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6482160B1780086FA21 /* mall_Msg@3x.png */; };
+		B925D64D2160B1790086FA21 /* mall_SearchIconGray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6492160B1790086FA21 /* mall_SearchIconGray@3x.png */; };
+		B925D64E2160B1790086FA21 /* mall_Msg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D64A2160B1790086FA21 /* mall_Msg@2x.png */; };
+		B925D64F2160B1790086FA21 /* mall_SearchIconGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D64B2160B1790086FA21 /* mall_SearchIconGray@2x.png */; };
+		B925D6522160B2090086FA21 /* mall_allDelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6502160B2080086FA21 /* mall_allDelete@3x.png */; };
+		B925D6532160B2090086FA21 /* mall_allDelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B925D6512160B2090086FA21 /* mall_allDelete@2x.png */; };
 		B93434CA215F5865006F01ED /* UIColor+colorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = B93434C9215F5865006F01ED /* UIColor+colorChange.m */; };
+		B936857321757832008FE3AD /* NMPayResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936857221757832008FE3AD /* NMPayResultsViewController.m */; };
+		B93685762175794F008FE3AD /* NMPayResultsReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93685752175794F008FE3AD /* NMPayResultsReusableView.m */; };
+		B936857A2175874F008FE3AD /* car_paySuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685782175874E008FE3AD /* car_paySuccess@2x.png */; };
+		B936857B2175874F008FE3AD /* car_paySuccess@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685792175874E008FE3AD /* car_paySuccess@3x.png */; };
+		B93685822175D171008FE3AD /* mall_collectNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936857C2175D16F008FE3AD /* mall_collectNormal@2x.png */; };
+		B93685832175D171008FE3AD /* mall_collectNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936857D2175D16F008FE3AD /* mall_collectNormal@3x.png */; };
+		B93685842175D171008FE3AD /* mall_collectSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936857E2175D16F008FE3AD /* mall_collectSelect@2x.png */; };
+		B93685852175D171008FE3AD /* mall_collectSelect@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936857F2175D170008FE3AD /* mall_collectSelect@3x.png */; };
+		B93685862175D171008FE3AD /* mall_style@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685802175D170008FE3AD /* mall_style@2x.png */; };
+		B93685872175D171008FE3AD /* mall_style@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685812175D170008FE3AD /* mall_style@3x.png */; };
+		B936858A2175DA80008FE3AD /* car_payFailure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685882175DA7F008FE3AD /* car_payFailure@2x.png */; };
+		B936858B2175DA80008FE3AD /* car_payFailure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93685892175DA80008FE3AD /* car_payFailure@3x.png */; };
+		B936858E2175DAD0008FE3AD /* mall_guessLike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936858C2175DACF008FE3AD /* mall_guessLike@2x.png */; };
+		B936858F2175DAD0008FE3AD /* mall_guessLike@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B936858D2175DACF008FE3AD /* mall_guessLike@3x.png */; };
 		B9456A592171DC4B0029B392 /* NMPayWayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A582171DC4B0029B392 /* NMPayWayViewController.m */; };
 		B9456A622171E3CC0029B392 /* NMPayWayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A612171E3CC0029B392 /* NMPayWayTableViewCell.m */; };
 		B9456A662171E7690029B392 /* NMPayWayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9456A652171E7690029B392 /* NMPayWayModel.m */; };
@@ -366,14 +380,30 @@
 		B925D6422160A6110086FA21 /* ToolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolObject.m; sourceTree = "<group>"; };
 		B925D6442160A79D0086FA21 /* NMTopOperationBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMTopOperationBarView.h; sourceTree = "<group>"; };
 		B925D6452160A79D0086FA21 /* NMTopOperationBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMTopOperationBarView.m; sourceTree = "<group>"; };
-		B925D6482160B1780086FA21 /* mail_Msg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail_Msg@3x.png"; sourceTree = "<group>"; };
-		B925D6492160B1790086FA21 /* mail_SearchIconGray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail_SearchIconGray@3x.png"; sourceTree = "<group>"; };
-		B925D64A2160B1790086FA21 /* mail_Msg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail_Msg@2x.png"; sourceTree = "<group>"; };
-		B925D64B2160B1790086FA21 /* mail_SearchIconGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mail_SearchIconGray@2x.png"; sourceTree = "<group>"; };
-		B925D6502160B2080086FA21 /* allDelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allDelete@3x.png"; sourceTree = "<group>"; };
-		B925D6512160B2090086FA21 /* allDelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allDelete@2x.png"; sourceTree = "<group>"; };
+		B925D6482160B1780086FA21 /* mall_Msg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_Msg@3x.png"; sourceTree = "<group>"; };
+		B925D6492160B1790086FA21 /* mall_SearchIconGray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_SearchIconGray@3x.png"; sourceTree = "<group>"; };
+		B925D64A2160B1790086FA21 /* mall_Msg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_Msg@2x.png"; sourceTree = "<group>"; };
+		B925D64B2160B1790086FA21 /* mall_SearchIconGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_SearchIconGray@2x.png"; sourceTree = "<group>"; };
+		B925D6502160B2080086FA21 /* mall_allDelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_allDelete@3x.png"; sourceTree = "<group>"; };
+		B925D6512160B2090086FA21 /* mall_allDelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_allDelete@2x.png"; sourceTree = "<group>"; };
 		B93434C8215F5865006F01ED /* UIColor+colorChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorChange.h"; sourceTree = "<group>"; };
 		B93434C9215F5865006F01ED /* UIColor+colorChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colorChange.m"; sourceTree = "<group>"; };
+		B936857121757832008FE3AD /* NMPayResultsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayResultsViewController.h; sourceTree = "<group>"; };
+		B936857221757832008FE3AD /* NMPayResultsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayResultsViewController.m; sourceTree = "<group>"; };
+		B93685742175794F008FE3AD /* NMPayResultsReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayResultsReusableView.h; sourceTree = "<group>"; };
+		B93685752175794F008FE3AD /* NMPayResultsReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayResultsReusableView.m; sourceTree = "<group>"; };
+		B93685782175874E008FE3AD /* car_paySuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_paySuccess@2x.png"; sourceTree = "<group>"; };
+		B93685792175874E008FE3AD /* car_paySuccess@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_paySuccess@3x.png"; sourceTree = "<group>"; };
+		B936857C2175D16F008FE3AD /* mall_collectNormal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_collectNormal@2x.png"; sourceTree = "<group>"; };
+		B936857D2175D16F008FE3AD /* mall_collectNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_collectNormal@3x.png"; sourceTree = "<group>"; };
+		B936857E2175D16F008FE3AD /* mall_collectSelect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_collectSelect@2x.png"; sourceTree = "<group>"; };
+		B936857F2175D170008FE3AD /* mall_collectSelect@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_collectSelect@3x.png"; sourceTree = "<group>"; };
+		B93685802175D170008FE3AD /* mall_style@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_style@2x.png"; sourceTree = "<group>"; };
+		B93685812175D170008FE3AD /* mall_style@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_style@3x.png"; sourceTree = "<group>"; };
+		B93685882175DA7F008FE3AD /* car_payFailure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_payFailure@2x.png"; sourceTree = "<group>"; };
+		B93685892175DA80008FE3AD /* car_payFailure@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car_payFailure@3x.png"; sourceTree = "<group>"; };
+		B936858C2175DACF008FE3AD /* mall_guessLike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_guessLike@2x.png"; sourceTree = "<group>"; };
+		B936858D2175DACF008FE3AD /* mall_guessLike@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mall_guessLike@3x.png"; sourceTree = "<group>"; };
 		B9456A572171DC4B0029B392 /* NMPayWayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayWayViewController.h; sourceTree = "<group>"; };
 		B9456A582171DC4B0029B392 /* NMPayWayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMPayWayViewController.m; sourceTree = "<group>"; };
 		B9456A602171E3CC0029B392 /* NMPayWayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMPayWayTableViewCell.h; sourceTree = "<group>"; };
@@ -927,6 +957,7 @@
 				B91617012174809B003D98D1 /* 购物车 */,
 				B9599EFD21702D5200C53F47 /* 确认订单 */,
 				B9456A5A2171E2400029B392 /* 支付方式 */,
+				B936856D2175779D008FE3AD /* 支付结果 */,
 			);
 			path = "商城";
 			sourceTree = "<group>";
@@ -1226,21 +1257,29 @@
 			path = "分页菜单视图";
 			sourceTree = "<group>";
 		};
-		B925D6472160B12C0086FA21 /* Mail(商城) */ = {
+		B925D6472160B12C0086FA21 /* Mall(商城) */ = {
 			isa = PBXGroup;
 			children = (
+				B936858C2175DACF008FE3AD /* mall_guessLike@2x.png */,
+				B936858D2175DACF008FE3AD /* mall_guessLike@3x.png */,
 				B9096C6C2164891200EFC0F9 /* navBar_back@2x.png */,
 				B9096C6D2164891300EFC0F9 /* navBar_back@3x.png */,
 				B9096C5E2164619F00EFC0F9 /* search_empty@2x.png */,
 				B9096C5F216461A000EFC0F9 /* search_empty@3x.png */,
-				B925D6512160B2090086FA21 /* allDelete@2x.png */,
-				B925D6502160B2080086FA21 /* allDelete@3x.png */,
-				B925D64A2160B1790086FA21 /* mail_Msg@2x.png */,
-				B925D6482160B1780086FA21 /* mail_Msg@3x.png */,
-				B925D64B2160B1790086FA21 /* mail_SearchIconGray@2x.png */,
-				B925D6492160B1790086FA21 /* mail_SearchIconGray@3x.png */,
+				B925D6512160B2090086FA21 /* mall_allDelete@2x.png */,
+				B925D6502160B2080086FA21 /* mall_allDelete@3x.png */,
+				B925D64A2160B1790086FA21 /* mall_Msg@2x.png */,
+				B925D6482160B1780086FA21 /* mall_Msg@3x.png */,
+				B925D64B2160B1790086FA21 /* mall_SearchIconGray@2x.png */,
+				B925D6492160B1790086FA21 /* mall_SearchIconGray@3x.png */,
+				B936857C2175D16F008FE3AD /* mall_collectNormal@2x.png */,
+				B936857D2175D16F008FE3AD /* mall_collectNormal@3x.png */,
+				B936857E2175D16F008FE3AD /* mall_collectSelect@2x.png */,
+				B936857F2175D170008FE3AD /* mall_collectSelect@3x.png */,
+				B93685802175D170008FE3AD /* mall_style@2x.png */,
+				B93685812175D170008FE3AD /* mall_style@3x.png */,
 			);
-			path = "Mail(商城)";
+			path = "Mall(商城)";
 			sourceTree = "<group>";
 		};
 		B93434CB215F652E006F01ED /* tabbar */ = {
@@ -1266,6 +1305,52 @@
 				B94A9B50215E05A700A9C689 /* tabItem5Select@3x.png */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		B936856D2175779D008FE3AD /* 支付结果 */ = {
+			isa = PBXGroup;
+			children = (
+				B9368570217577DE008FE3AD /* Controller */,
+				B936856F217577BF008FE3AD /* View */,
+				B936856E217577B1008FE3AD /* Model */,
+			);
+			path = "支付结果";
+			sourceTree = "<group>";
+		};
+		B936856E217577B1008FE3AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B936856F217577BF008FE3AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B93685742175794F008FE3AD /* NMPayResultsReusableView.h */,
+				B93685752175794F008FE3AD /* NMPayResultsReusableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9368570217577DE008FE3AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B936857121757832008FE3AD /* NMPayResultsViewController.h */,
+				B936857221757832008FE3AD /* NMPayResultsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B93685772175873D008FE3AD /* 支付结果 */ = {
+			isa = PBXGroup;
+			children = (
+				B93685882175DA7F008FE3AD /* car_payFailure@2x.png */,
+				B93685892175DA80008FE3AD /* car_payFailure@3x.png */,
+				B93685782175874E008FE3AD /* car_paySuccess@2x.png */,
+				B93685792175874E008FE3AD /* car_paySuccess@3x.png */,
+			);
+			path = "支付结果";
 			sourceTree = "<group>";
 		};
 		B9456A5A2171E2400029B392 /* 支付方式 */ = {
@@ -1353,7 +1438,7 @@
 			isa = PBXGroup;
 			children = (
 				B9161710217487EC003D98D1 /* 默认加载图片 */,
-				B925D6472160B12C0086FA21 /* Mail(商城) */,
+				B925D6472160B12C0086FA21 /* Mall(商城) */,
 				B9599F23217098CB00C53F47 /* 购物车 */,
 				B9A6A3C9216DC638007563B5 /* 消息 */,
 				B9A599532165A8AD007B46BA /* 我的 */,
@@ -1527,6 +1612,7 @@
 		B9599F23217098CB00C53F47 /* 购物车 */ = {
 			isa = PBXGroup;
 			children = (
+				B93685772175873D008FE3AD /* 支付结果 */,
 				B9456A672171E82B0029B392 /* 支付方式 */,
 				B9FC26162171C3F500749FD2 /* car_Location@2x.png */,
 				B9FC26172171C3F500749FD2 /* car_Location@3x.png */,
@@ -1861,37 +1947,44 @@
 				B9599F31217098FB00C53F47 /* car_ShopImg@2x.png in Resources */,
 				B9599F36217098FB00C53F47 /* car_chooseNormal@2x.png in Resources */,
 				B95F640C216B502F00650551 /* myWaitEvaluate@2x.png in Resources */,
+				B93685852175D171008FE3AD /* mall_collectSelect@3x.png in Resources */,
 				B94A9B55215E05A700A9C689 /* tabItem1Normal@3x.png in Resources */,
 				B9096C6F2164891300EFC0F9 /* navBar_back@3x.png in Resources */,
 				B9FC26142171BF1B00749FD2 /* car_Becareful@2x.png in Resources */,
 				B9599F3E21709ADC00C53F47 /* car_Backround@2x.png in Resources */,
 				B916172221748A04003D98D1 /* default_Good1@3x.png in Resources */,
+				B93685842175D171008FE3AD /* mall_collectSelect@2x.png in Resources */,
 				B9599F32217098FB00C53F47 /* car_chooseSelect@2x.png in Resources */,
 				B9456A772171E83A0029B392 /* car_ unionpay@2x.png in Resources */,
 				B9A599712165C2AE007B46BA /* mySetUp@2x.png in Resources */,
+				B93685862175D171008FE3AD /* mall_style@2x.png in Resources */,
 				B95F63F7216B20C200650551 /* myBackImg.png in Resources */,
-				B925D64D2160B1790086FA21 /* mail_SearchIconGray@3x.png in Resources */,
+				B925D64D2160B1790086FA21 /* mall_SearchIconGray@3x.png in Resources */,
 				B95F640B216B502F00650551 /* myWaitReceive@2x.png in Resources */,
 				B916172121748A04003D98D1 /* default_Logo@3x.png in Resources */,
 				B9A6A3D6216DC661007563B5 /* pinglun@2x.png in Resources */,
-				B925D64C2160B1790086FA21 /* mail_Msg@3x.png in Resources */,
+				B925D64C2160B1790086FA21 /* mall_Msg@3x.png in Resources */,
 				B9A6A3D7216DC661007563B5 /* huozan_shoucang@3x.png in Resources */,
 				B94A9B5B215E05A700A9C689 /* tabItem4Normal@3x.png in Resources */,
 				B9A5995C2165C229007B46BA /* myNotes@2x.png in Resources */,
 				B9456A732171E83A0029B392 /* car_qqWalletPay@2x.png in Resources */,
 				B9A5998421660C23007B46BA /* myUserLogo_Not@3x.png in Resources */,
 				B94A9B65215E062D00A9C689 /* tabItem5Normal@3x.png in Resources */,
+				B93685872175D171008FE3AD /* mall_style@3x.png in Resources */,
 				B95F6404216B502300650551 /* myWaitPay@2x.png in Resources */,
 				B916172421748A04003D98D1 /* default_Plate@2x.png in Resources */,
 				B9A599692165C26D007B46BA /* myShop@2x.png in Resources */,
 				B9142DA1215CC3F400762C63 /* Assets.xcassets in Resources */,
 				B9A5996D2165C2A2007B46BA /* myService@2x.png in Resources */,
 				B94A9B56215E05A700A9C689 /* tabItem1Normal@2x.png in Resources */,
+				B936858F2175DAD0008FE3AD /* mall_guessLike@3x.png in Resources */,
 				B9599F3B217098FB00C53F47 /* car_ArrowRed@3x.png in Resources */,
 				B95F6403216B502300650551 /* myWaitSend@3x.png in Resources */,
+				B936858E2175DAD0008FE3AD /* mall_guessLike@2x.png in Resources */,
 				B94A9B57215E05A700A9C689 /* tabItem3Normal@3x.png in Resources */,
 				B9A599722165C2AE007B46BA /* mySetUp@3x.png in Resources */,
 				B9096C61216461A000EFC0F9 /* search_empty@3x.png in Resources */,
+				B936857B2175874F008FE3AD /* car_paySuccess@3x.png in Resources */,
 				B9456A712171E83A0029B392 /* car_zhiFuBaoPay@2x.png in Resources */,
 				B9599F33217098FB00C53F47 /* car_DropDown@3x.png in Resources */,
 				B916171D21748A04003D98D1 /* default_Good@3x.png in Resources */,
@@ -1911,7 +2004,7 @@
 				B916172821748A04003D98D1 /* default_Logo@2x.png in Resources */,
 				B9FC26182171C3F500749FD2 /* car_Location@2x.png in Resources */,
 				B95F6406216B502300650551 /* myWaitSend@2x.png in Resources */,
-				B925D64F2160B1790086FA21 /* mail_SearchIconGray@2x.png in Resources */,
+				B925D64F2160B1790086FA21 /* mall_SearchIconGray@2x.png in Resources */,
 				B94A9B52215E05A700A9C689 /* tabItem2Normal@3x.png in Resources */,
 				B9A6A3DB216DC661007563B5 /* sixin@2x.png in Resources */,
 				B9599F1E21708BA000C53F47 /* NMConfirmOrderGoodsCell.xib in Resources */,
@@ -1919,14 +2012,18 @@
 				B95F6412216B504500650551 /* myAfterSales@2x.png in Resources */,
 				B9599F34217098FB00C53F47 /* car_chooseNormal@3x.png in Resources */,
 				B95F63FB216B25DE00650551 /* more_arrow@2x.png in Resources */,
-				B925D6532160B2090086FA21 /* allDelete@2x.png in Resources */,
+				B936857A2175874F008FE3AD /* car_paySuccess@2x.png in Resources */,
+				B925D6532160B2090086FA21 /* mall_allDelete@2x.png in Resources */,
+				B936858A2175DA80008FE3AD /* car_payFailure@2x.png in Resources */,
 				B9599F222170912400C53F47 /* NMConfirmOrderFooterView.xib in Resources */,
+				B93685822175D171008FE3AD /* mall_collectNormal@2x.png in Resources */,
 				B9A6A3DA216DC661007563B5 /* tongzhi@2x.png in Resources */,
 				B95F63FA216B25DE00650551 /* more_arrow@3x.png in Resources */,
 				B9456A742171E83A0029B392 /* car_qqWalletPay@3x.png in Resources */,
 				B9FC26102171B9D700749FD2 /* car_addressBack@3x.png in Resources */,
 				B9A5995B2165C229007B46BA /* myNotes@3x.png in Resources */,
 				B9456A722171E83A0029B392 /* car_wecatPay@2x.png in Resources */,
+				B93685832175D171008FE3AD /* mall_collectNormal@3x.png in Resources */,
 				B9A5996E2165C2A2007B46BA /* myService@3x.png in Resources */,
 				B94A9B5C215E05A700A9C689 /* tabItem3Normal@2x.png in Resources */,
 				B9096C6E2164891300EFC0F9 /* navBar_back@2x.png in Resources */,
@@ -1938,12 +2035,12 @@
 				B9FC26192171C3F500749FD2 /* car_Location@3x.png in Resources */,
 				B94A9B5A215E05A700A9C689 /* tabItem5Select@2x.png in Resources */,
 				B9599F3F21709ADC00C53F47 /* car_Backround@3x.png in Resources */,
-				B925D6522160B2090086FA21 /* allDelete@3x.png in Resources */,
+				B925D6522160B2090086FA21 /* mall_allDelete@3x.png in Resources */,
 				B94A9B54215E05A700A9C689 /* tabItem2Select@3x.png in Resources */,
 				B95F640D216B502F00650551 /* myWaitReceive@3x.png in Resources */,
 				B9A6A3DC216DC661007563B5 /* sixin@3x.png in Resources */,
 				B916170F217482AB003D98D1 /* NMShopCartTableViewCell.xib in Resources */,
-				B925D64E2160B1790086FA21 /* mail_Msg@2x.png in Resources */,
+				B925D64E2160B1790086FA21 /* mall_Msg@2x.png in Resources */,
 				B9A5995D2165C229007B46BA /* myWallet@2x.png in Resources */,
 				B916172521748A04003D98D1 /* default_Shuffling@2x.png in Resources */,
 				B9A5998321660C23007B46BA /* myUserLogo_Not@2x.png in Resources */,
@@ -1960,6 +2057,7 @@
 				B9599F39217098FB00C53F47 /* car_DropDown@2x.png in Resources */,
 				B94A9B64215E062D00A9C689 /* tabItem5Normal@2x.png in Resources */,
 				B94A9B5F215E05A700A9C689 /* tabItem4Select@3x.png in Resources */,
+				B936858B2175DA80008FE3AD /* car_payFailure@3x.png in Resources */,
 				B95F6405216B502300650551 /* myWaitPay@3x.png in Resources */,
 				B95F6411216B504500650551 /* myAfterSales@3x.png in Resources */,
 				B9A5996A2165C26D007B46BA /* myShop@3x.png in Resources */,
@@ -2086,6 +2184,7 @@
 				B925D6402160A0490086FA21 /* SPPageMenu.m in Sources */,
 				B9142DEF215CD35F00762C63 /* NMBaseNavigationController.m in Sources */,
 				A15E85DA2171BA50000B4736 /* NMOrderDetailsTableViewCell.m in Sources */,
+				B936857321757832008FE3AD /* NMPayResultsViewController.m in Sources */,
 				B916170E217482AB003D98D1 /* NMShopCartTableViewCell.m in Sources */,
 				B9A6A3C8216DAB22007563B5 /* NMMessageTableViewCell.m in Sources */,
 				B9142DDB215CCF6200762C63 /* NMAppDelegate+AppLifeCircle.m in Sources */,
@@ -2119,6 +2218,7 @@
 				B9A5994C2165A433007B46BA /* NMMineHeaderView.m in Sources */,
 				B9161707217480E4003D98D1 /* NMShopCartViewController.m in Sources */,
 				B9096C5D2164601400EFC0F9 /* SearchCollectionViewLayout.m in Sources */,
+				B93685762175794F008FE3AD /* NMPayResultsReusableView.m in Sources */,
 				B9D64791215E262700CF6122 /* NMTabBarItemAnimationManager.m in Sources */,
 				B9599F132170438400C53F47 /* NMConfirmOrderAddressCell.m in Sources */,
 				B9EFB985216311A6004881D9 /* NMMallOtherViewController.m in Sources */,

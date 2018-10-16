@@ -104,7 +104,7 @@
         UIButton *allDeleteTextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         //删除搜索框的全部内容
         allDeleteTextBtn.hidden = YES;
-        [allDeleteTextBtn setImage:[UIImage imageNamed:@"allDelete"] forState:UIControlStateNormal];
+        [allDeleteTextBtn setImage:[UIImage imageNamed:@"mall_allDelete"] forState:UIControlStateNormal];
         [allDeleteTextBtn addTarget:self action:@selector(deleteTextAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:allDeleteTextBtn];
         _allDeleteTextBtn = allDeleteTextBtn;

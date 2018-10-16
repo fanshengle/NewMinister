@@ -1,56 +1,72 @@
 //
-//  NMMailOtherViewController.m
+//  NMPayResultsViewController.m
 //  NewMinister
 //
-//  Created by 范声乐 on 2018/10/2.
+//  Created by 范声乐 on 2018/10/16.
 //  Copyright © 2018年 范声乐. All rights reserved.
 //
 
-#import "NMMallOtherViewController.h"
-#import "NMGoodsWaterFlowCollectionViewCell.h"
+#import "NMPayResultsViewController.h"
 
+#import "NMGoodsWaterFlowCollectionViewCell.h"
+#import "NMPayResultsReusableView.h"
 #import "NMGoodsDetailsViewController.h"
 
-@interface NMMallOtherViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,NMWaterFlowCollectionViewLayoutDelegate>
 
-@property (nonatomic,strong) SDCycleScrollView *shufflingScrollView;        //轮播滚动视图
-@property (nonatomic,strong) UICollectionView *collectionView;  
+@interface NMPayResultsViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,NMWaterFlowCollectionViewLayoutDelegate>
+{
+    
+    CGSize _headerSize;//断头的size
+}
+@property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) NSString *testStr;
 @property (nonatomic,strong) NSString *testStr1;
-
 @end
 
-@implementation NMMallOtherViewController
+@implementation NMPayResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    _headerSize = CGSizeMake(NMScreenWidth, NM240 + NM35);
+    [self setDefaultNavTitle:@"支付结果"];
+    [self.navBarView drawBottomLineWithColor:NMf1f1f1];
+    [self collectionView];
+    
     _testStr = @"我是士大夫看见很多思考辣椒粉哈师大符合了卡萨丁就恢复健康蓝色大海法律框架的十分快乐就好撒到了会计分录回复的索拉卡";
     _testStr1 = @"今天感冒去看医生，结果被人打了一顿，我就去报警，警察来了之后，问我被谁打了";
-    [self collectionView];
 }
 
 #pragma mark -- 懒加载创建collectionView
 - (UICollectionView *)collectionView{
     if (!_collectionView) {
-        
+
         //设置瀑布流布局
         NMWaterFlowCollectionViewLayout *layout = [NMWaterFlowCollectionViewLayout new];
         layout.columnCount = 2;
-        layout.sectionInset = UIEdgeInsetsMake(0, NM15, 0, NM15);
+        layout.sectionInset = UIEdgeInsetsMake(0, NM10, NM10, NM10);
         layout.rowMargin = NM10;
         layout.columnMargin = NM10;
         layout.delegate = self;
-        
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height) collectionViewLayout:layout];
+        layout.headerReferenceSize = _headerSize;
+
+        CGFloat collectionViewY = self.navBarView.height;
+        CGFloat collectionViewHeight = NMScreenHeight - collectionViewY;
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, collectionViewY, NMScreenWidth, collectionViewHeight) collectionViewLayout:layout];
         collectionView.backgroundColor = NMClearC;
-        [collectionView registerClass:[NMGoodsWaterFlowCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([NMGoodsWaterFlowCollectionViewCell class])];
         collectionView.delegate = self;
         collectionView.dataSource = self;
-        [self.view addSubview:collectionView];
         collectionView.scrollsToTop = YES;
+        collectionView.showsVerticalScrollIndicator = NO;
         _collectionView = collectionView;
+        [self.view addSubview:collectionView];
+
+        [_collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([UICollectionReusableView class])];
+        [_collectionView registerClass:[NMPayResultsReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([NMPayResultsReusableView class])];
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([UICollectionViewCell class])];
+        [_collectionView registerClass:[NMGoodsWaterFlowCollectionViewCell class] forCellWithReuseIdentifier:NSStringFromClass([NMGoodsWaterFlowCollectionViewCell class])];
+
     }
     return _collectionView;
 }
@@ -61,8 +77,42 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
     return 100;
 }
+
+#pragma mark -- 返回headerSize
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+
+    return _headerSize;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+
+    UICollectionReusableView *reusableView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([UICollectionReusableView class]) forIndexPath:indexPath];
+    if ([kind isEqualToString: UICollectionElementKindSectionHeader]) {
+        if (indexPath.section == 0) {
+
+            NMPayResultsReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([NMPayResultsReusableView class]) forIndexPath:indexPath];
+
+            [headerView refresh];
+            reusableView = (UICollectionReusableView *)headerView;
+        }else{
+            reusableView.backgroundColor = NMWhiteC;
+            //猜你喜欢lab
+            UILabel *guessLikeLab = [[UILabel alloc] init];
+            guessLikeLab.text = @"随便看看";
+            guessLikeLab.textColor = NMFF5349;
+            guessLikeLab.font = NMSystemFont(14);
+            [reusableView addSubview:guessLikeLab];
+            [guessLikeLab mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.center.equalTo(reusableView);
+            }];
+        }
+    }
+    return reusableView;
+}
+
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -78,14 +128,16 @@
         
         cell.goodDescribeLab.text = _testStr1;
     }
+    
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+
     NMGoodsDetailsViewController *vc = [[NMGoodsDetailsViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 #pragma mark ————— NMWaterFlowCollectionViewLayout 代理 —————
 - (CGFloat)waterFlowLayout:(NMWaterFlowCollectionViewLayout *)WaterFlowLayout heightForWidth:(CGFloat)width andIndexPath:(NSIndexPath *)indexPath{
@@ -103,8 +155,6 @@
     CGFloat cellHeight = cellWidth + hobbyH + 85.0;
     return cellHeight;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

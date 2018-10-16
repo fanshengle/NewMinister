@@ -42,6 +42,7 @@
 #define NM3  3.
 #define NM4  4.
 #define NM5  5.
+#define NM7  7.
 #define NM8  8.
 #define NM10 10.
 #define NM15 15.
@@ -57,11 +58,13 @@
 #define NM55 55.
 #define NM60 60.
 #define NM70 70.
+#define NM75 75.
 #define NM88 88.
 
 #define NM110 110.
 #define NM122 122.
 #define NM180 180.
+#define NM240 240.
 
 #define SPCornerRadius 5.0f                                         //通用半径
 

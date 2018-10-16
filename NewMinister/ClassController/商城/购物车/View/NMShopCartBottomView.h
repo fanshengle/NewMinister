@@ -18,6 +18,7 @@
 
 @property (nonatomic,strong) UIButton *goSettleBtn;//去结算按钮
 
+@property (nonatomic,copy) void(^GoSettleClickBlock)(void);
 
 - (void)refresh;
 

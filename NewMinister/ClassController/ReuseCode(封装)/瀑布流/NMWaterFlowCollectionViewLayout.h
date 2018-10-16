@@ -24,6 +24,9 @@
 
 @interface NMWaterFlowCollectionViewLayout : UICollectionViewLayout
 
+/** 段头的size */
+@property (nonatomic, assign) CGSize headerReferenceSize;
+
 @property (assign,nonatomic) CGFloat columnMargin;//每一列item之间的列间距
 @property (assign,nonatomic) CGFloat rowMargin;   //每一行item之间的行间距
 @property (assign,nonatomic) UIEdgeInsets sectionInset;//设置于collectionView边缘的间距

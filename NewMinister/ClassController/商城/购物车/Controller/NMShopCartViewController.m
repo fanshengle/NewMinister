@@ -11,6 +11,8 @@
 #import "NMShopCartTableViewCell.h"
 #import "NMShopCartBottomView.h"
 
+#import "NMGoodsDetailsViewController.h"
+#import "NMPayResultsViewController.h"
 @interface NMShopCartViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -61,6 +63,14 @@
         [self.view addSubview:bottomView];
         bottomView.backgroundColor = NMWhiteC;
         _bottomView = bottomView;
+        
+        NMWeakSelf(self)
+        _bottomView.GoSettleClickBlock = ^{
+            
+            NMPayResultsViewController *vc = [[NMPayResultsViewController alloc] init];
+            [weakself.navigationController pushViewController:vc animated:YES];
+        };
+        
         [_bottomView refresh];
     }
     return _bottomView;

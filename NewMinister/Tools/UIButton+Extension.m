@@ -10,7 +10,6 @@
 
 @implementation UIButton (Extension)
 
-
 #pragma mark -- 文字在左，图片在右,space设置两者间距
 - (void)setLeftTextAndRightPictureWithSpace:(CGFloat)space{
     

@@ -16,19 +16,19 @@
         
         NSDictionary *cartMsgType = @{@"titleText":@"卡类型",
                                       @"cartTypeText": @"招商银行 储蓄卡",
-                                      @"allDeleteIcon":@"allDelete",
+                                      @"allDeleteIcon":@"mall_allDelete",
                                       };
         NSDictionary *cartMsgName = @{@"titleText":@"姓名",
                                  @"placeholderStr": @"持卡人姓名",
-                                 @"allDeleteIcon":@"allDelete",
+                                 @"allDeleteIcon":@"mall_allDelete",
                                  };
         NSDictionary *cartMsgIdCard = @{@"titleText":@"身份证",
                                    @"placeholderStr":@"持卡人身份证",
-                                   @"allDeleteIcon":@"allDelete",
+                                   @"allDeleteIcon":@"mall_allDelete",
                                    };
         NSDictionary *cartMsgPhone = @{@"titleText":@"手机号",
                                    @"placeholderStr":@"银行预留电话",
-                                   @"allDeleteIcon":@"allDelete",
+                                   @"allDeleteIcon":@"mall_allDelete",
                                    };
         NSArray *firstArr = @[cartMsgType];
         NSArray *secondArr = @[cartMsgName,cartMsgIdCard,cartMsgPhone];

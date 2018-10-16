@@ -88,7 +88,7 @@
         [goSettleBtn.titleLabel setFont:NMSystemFont(14)];
         [goSettleBtn setTitle:@"去结算" forState:UIControlStateNormal];
         [goSettleBtn setTitleColor:NMWhiteC forState:UIControlStateNormal];
-        [goSettleBtn addTarget:self action:@selector(buyNowAction:) forControlEvents:UIControlEventTouchUpInside];
+        [goSettleBtn addTarget:self action:@selector(goSettleAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:goSettleBtn];
         _goSettleBtn = goSettleBtn;
         
@@ -143,6 +143,14 @@
     return _combinedLab;
 }
 
+
+- (void)goSettleAction:(UIButton *)button{
+    
+    if (self.GoSettleClickBlock) {
+        
+        self.GoSettleClickBlock();
+    }
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
