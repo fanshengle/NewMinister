@@ -52,9 +52,34 @@
         self.rowMargin = 10;
         self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
         self.columnCount = 3;
+        self.headerReferenceSize = CGSizeZero;
     }
     return self;
 }
+
+////每一次布局前的准备工作
+//-(void)prepareLayout
+//{
+//    [super prepareLayout];
+//
+//    //清空最大的y值
+//    for (int i =0; i < self.columnCount; i++)
+//    {
+//        NSString *column = [NSString stringWithFormat:@"%d",i];
+//        self.maxYDic[column] = @(self.sectionInset.top);
+//    }
+//
+//    //计算所有item的属性
+//    [self.attrsArray removeAllObjects];
+//    NSInteger count = [self.collectionView numberOfItemsInSection:self.currentSection];
+//    for (int i=0; i<count; i++){
+//        
+//        UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:self.currentSection]];
+//
+//        [self.attrsArray addObject:attrs];
+//    }
+//}
+
 
 //每一次布局前的准备工作
 -(void)prepareLayout
@@ -70,20 +95,29 @@
     
     //计算所有item的属性
     [self.attrsArray removeAllObjects];
+    
+    //头部视图
+    UICollectionViewLayoutAttributes * layoutHeader = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:UICollectionElementKindSectionHeader withIndexPath:[NSIndexPath indexPathWithIndex:0]];
+    layoutHeader.frame =CGRectMake(0,0, self.headerReferenceSize.width, self.headerReferenceSize.height);
+    [self.attrsArray addObject:layoutHeader];
+    
+    //遍历所有item
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
-    for (int i=0; i<count; i++)
-    {
+    for (int i=0; i<count; i++){
+
         UICollectionViewLayoutAttributes *attrs = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
-        
+
         [self.attrsArray addObject:attrs];
     }
 }
+
 
 //设置collectionView滚动区域
 -(CGSize)collectionViewContentSize
 {
     //假设最长的那一列为第0列
     __block NSString *maxColumn = @"0";
+    
     
     //遍历字典,找出最长的那一列
     [self.maxYDic enumerateKeysAndObjectsUsingBlock:^(NSString *column, NSNumber *maxY, BOOL *stop) {
@@ -93,7 +127,10 @@
             maxColumn = column;
         }
     }];
-    return CGSizeMake(0, [self.maxYDic[maxColumn]floatValue]+self.sectionInset.bottom);
+    //没有头部的所有item滚动区域
+    //return CGSizeMake(0, [self.maxYDic[maxColumn]floatValue]+self.sectionInset.bottom);
+    //包括段头headerView的高度
+    return CGSizeMake(0, [self.maxYDic[maxColumn] floatValue] + self.sectionInset.bottom + self.headerReferenceSize.height);
 }
 
 //允许每一次重新布局
@@ -123,22 +160,20 @@
     //调用协议delegate
     CGFloat height = [self.delegate waterFlowLayout:self heightForWidth:width andIndexPath:indexPath] ;
     
-    
     //计算每一个item的位置
     CGFloat x = self.sectionInset.left + (width + self.columnMargin) * [minColumn floatValue];
     CGFloat y = [self.maxYDic[minColumn] floatValue] + self.rowMargin;
     
-    
     //更新这一列的y值
     self.maxYDic[minColumn] = @(y + height);
     
-    
     //创建布局属性
     UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
-    
     //设置item的frame
-    attrs.frame = CGRectMake(x, y, width, height);
+    //attrs.frame = CGRectMake(x, y, width, height);
     
+    //把瀑布流的Cell的起始位置从headerView的最大Y开始布局
+    attrs.frame = CGRectMake(x, self.headerReferenceSize.height + y, width, height );
     return attrs;
 }
 

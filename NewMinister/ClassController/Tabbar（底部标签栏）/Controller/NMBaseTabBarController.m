@@ -108,7 +108,7 @@
     NSMutableArray *controllerArr = [NSMutableArray arrayWithObjects:homeVC, mallVC, allianceVC, mineVC, nil];
     NSMutableArray *normalImageArr = [NSMutableArray arrayWithArray:@[@"tabItem1Normal", @"tabItem2Normal", @"tabItem4Normal", @"tabItem5Normal"]];
     NSMutableArray *selectedImageArr = [NSMutableArray arrayWithArray:@[@"tabItem1Select", @"tabItem2Select", @"tabItem4Select", @"tabItem5Select"]];
-    NSMutableArray *titleArr = [NSMutableArray arrayWithArray:@[@"首页", @"商城", @"尚盟", @"我的"]];
+    NSMutableArray *titleArr = [NSMutableArray arrayWithArray:@[@"首页", @"商城", @"品盟", @"我的"]];
     //存放所有的子视图控制器
     NSMutableArray *childVCArr = [NSMutableArray array];
     for (int  i = 0; i < controllerArr.count; i++) {
